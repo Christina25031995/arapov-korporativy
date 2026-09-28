@@ -516,6 +516,22 @@
     .js .mask{clip-path:none !important;}
     .js .curtain{display:none;}
   }
+
+  /* Заголовки разделов в одну строку на компьютере */
+  .sec-head{grid-template-columns:1fr;gap:28px;}
+  .sec-head.solo{display:block;margin-bottom:72px;}
+  .sec-head.solo h2{margin:0;}
+  .official h2,.docs h2{max-width:none;}
+  .brief-box h2,.style-grid h2,.faq-side h2{margin:0;}
+  .contact .sec-head h2{margin:0;}
+  .cta-band{grid-template-columns:1fr;gap:26px;}
+  .cta-row{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
+  .cta-row p{margin:0;}
+  @media (min-width:901px){
+    section h2{font-size:min(58px,calc((100vw - 64px) / 20.5));white-space:nowrap;}
+    .contact .sec-head h2{font-size:min(84px,calc((100vw - 64px) / 13));}
+    .cta-band h3{font-size:min(76px,calc((100vw - 64px) / 15.5));white-space:nowrap;}
+  }
 </style>
 </head>
 <body>
@@ -590,10 +606,9 @@
 <!-- 2. КОРОТКО ДЛЯ РУКОВОДИТЕЛЯ (интерес: решение принимают несколько человек) -->
 <section class="brief light" id="brief">
   <div class="wrap">
+    <div class="sec-head solo"><span class="eyebrow rv">Коротко для&nbsp;руководителя</span><h2 data-split>Пять пунктов, если <em>нет времени</em></h2></div>
     <div class="brief-box">
       <div>
-        <span class="eyebrow rv">Коротко для&nbsp;руководителя</span>
-        <h2 data-split>Пять пунктов, если нет времени <em>читать всё</em></h2>
         <p class="rv">Удобно переслать тому, кто согласует бюджет и&nbsp;подрядчика.</p>
         <div class="brief-actions rv">
           <button type="button" class="btn btn-dark mag" id="share-btn">Скопировать ссылку</button>
@@ -616,7 +631,7 @@
 <section class="formats" id="formats">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Новогодний корпоратив, день компании и&nbsp;<em>деловое событие</em></h2></div>
+      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Пять форматов <em>под&nbsp;вашу задачу</em></h2></div>
       <p class="lead rv">Длительность и&nbsp;число гостей ориентировочные, точнее рассчитаю в&nbsp;КП&nbsp;под&nbsp;вашу программу.</p>
     </div>
     <!-- ЗАМЕНИТЬ: подтвердить у Тимофея длительность и диапазоны гостей по каждому формату (сейчас ориентир рынка) -->
@@ -724,13 +739,12 @@
 <!-- 6. СТИЛЬ ВЕДЕНИЯ (снятие главного страха) -->
 <section id="style" class="light">
   <div class="wrap">
+    <div class="sec-head solo"><span class="eyebrow rv">Стиль ведения</span><h2 data-split>Корпоратив <em>без&nbsp;неловкости</em></h2></div>
     <div class="style-grid">
       <div class="style-photo mask">
         <img src="images/action-timofey.jpg" alt="Тимофей Арапов ведёт мероприятие" loading="lazy">
       </div>
       <div>
-        <span class="eyebrow rv">Стиль ведения</span>
-        <h2 data-split>Корпоратив <em>без&nbsp;неловкости</em></h2>
         <p class="lead rv">Разный зал, от&nbsp;стажёров до&nbsp;директоров, и&nbsp;половина не&nbsp;любит «участвовать». Поэтому я&nbsp;веду так, чтобы неловко не&nbsp;было никому.</p>
         <div class="fears">
           <div class="fears-head"><span>Чего опасаются</span><span>Как&nbsp;у&nbsp;меня</span></div>
@@ -834,11 +848,8 @@
       </div>
     </div>
     <div class="cta-band rv">
-      <div>
-        <h3>Проверю вашу дату <em>за&nbsp;15&nbsp;минут</em></h3>
-        <p>Декабрьские пятницы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>. Бронь закрепляется договором.</p>
-      </div>
-      <a href="#kp" class="btn btn-dark mag" data-focus="date">Проверить дату <span class="arr">→</span></a>
+      <h3>Проверю вашу дату <em>за&nbsp;15&nbsp;минут</em></h3>
+      <div class="cta-row"><p>Декабрьские пятницы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>. Бронь закрепляется договором.</p><a href="#kp" class="btn btn-dark mag" data-focus="date">Проверить дату <span class="arr">→</span></a></div>
     </div>
   </div>
 </section>
@@ -923,10 +934,9 @@
 <!-- 13. ВОПРОСЫ (последние возражения) -->
 <section id="faq" class="light">
   <div class="wrap">
+    <div class="sec-head solo"><span class="eyebrow rv">Вопросы</span><h2 data-split>Частые вопросы <em>от&nbsp;компаний</em></h2></div>
     <div class="faq-grid">
       <div class="faq-side">
-        <span class="eyebrow rv">Вопросы</span>
-        <h2 data-split>Частые вопросы <em>от&nbsp;компаний</em></h2>
         <p class="rv">Не&nbsp;нашли ответа? Спросите в&nbsp;форме или&nbsp;по&nbsp;телефону, отвечу в&nbsp;тот&nbsp;же&nbsp;день.</p>
         <a href="tel:+79522875375" class="text-link rv">+7&nbsp;952&nbsp;287-53-75</a>
       </div>
@@ -983,10 +993,9 @@
 <!-- 14. ФОРМА КП (действие) -->
 <section class="contact" id="kp">
   <div class="wrap">
+    <div class="sec-head solo"><span class="eyebrow rv">Запрос КП</span><h2 data-split>Получить КП <em>за&nbsp;15&nbsp;минут</em></h2></div>
     <div class="contact-grid">
       <div>
-        <span class="eyebrow rv">Запрос КП</span>
-        <h2 data-split>Получить КП <em>за&nbsp;15&nbsp;минут</em></h2>
         <ol class="after" data-stagger>
           <li class="rv"><span><b>Проверю дату</b> и&nbsp;отвечу в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее время.</span></li>
           <li class="rv"><span><b>Пришлю КП</b> со&nbsp;стоимостью под&nbsp;ваш формат и&nbsp;длительность.</span></li>
