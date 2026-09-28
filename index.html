@@ -357,7 +357,7 @@
   .pack li{padding:12px 0;border-top:1px solid var(--line);font-size:15px;}
   .price{margin-bottom:26px;}
   .price b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:30px;}
-  .price span{font-size:13px;color:var(--muted);}
+  .price span{display:block;min-height:3.2em;font-size:13px;color:var(--muted);}
   .pack .btn{width:100%;}
   .pack.is-main .kicker{color:var(--accent);}
   .pack.is-main::before{content:'';position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--accent);}
@@ -573,7 +573,7 @@
     <!-- ЗАМЕНИТЬ: 800+ мероприятий взято с главной, там цифра тоже ждёт подтверждения; диапазон гостей 30–500 подтвердить -->
     <div class="facts" data-stagger>
       <div class="fact rv"><b><span data-count="800">800</span>+</b><span>мероприятий на&nbsp;сцене с&nbsp;2011&nbsp;года</span></div>
-      <div class="fact rv"><b>30–500</b><span>гостей: от&nbsp;отдела до&nbsp;всей компании, в&nbsp;зале или&nbsp;на&nbsp;выезде</span></div>
+      <div class="fact rv"><b><span class="nowrap">30–500</span></b><span>гостей: от&nbsp;отдела до&nbsp;всей компании, в&nbsp;зале или&nbsp;на&nbsp;выезде</span></div>
       <div class="fact rv"><b>Договор</b><span>юрлица, оплата по&nbsp;безналу, закрывающие документы</span></div>
       <div class="fact rv"><b><span data-count="15">15</span> мин</b><span>на&nbsp;КП&nbsp;в&nbsp;рабочее время, с&nbsp;ответом по&nbsp;дате</span></div>
     </div>
@@ -622,37 +622,37 @@
     <!-- ЗАМЕНИТЬ: подтвердить у Тимофея длительность и диапазоны гостей по каждому формату (сейчас ориентир рынка) -->
     <div class="fmts" data-stagger>
       <div class="fmt rv open">
-        <button class="fmt-head" type="button" aria-expanded="true"><span class="fmt-num">01</span><span class="fmt-title">Новогодний корпоратив</span><span class="fmt-meta"><span class="chip">3–5&nbsp;часов</span><span class="chip">30–300&nbsp;гостей</span></span><span class="plus" aria-hidden="true"></span></button>
+        <button class="fmt-head" type="button" aria-expanded="true"><span class="fmt-num">01</span><span class="fmt-title">Новогодний корпоратив</span><span class="fmt-meta"><span class="chip"><span class="nowrap">3–5&nbsp;часов</span></span><span class="chip"><span class="nowrap">30–300&nbsp;гостей</span></span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Итоги года и&nbsp;праздник для&nbsp;всей команды.<span class="fmt-chips" hidden><span class="chip">3–5&nbsp;часов</span><span class="chip">30–300&nbsp;гостей</span></span></p>
+          <p class="sub">Итоги года и&nbsp;праздник для&nbsp;всей команды.<span class="fmt-chips" hidden><span class="chip"><span class="nowrap">3–5&nbsp;часов</span></span><span class="chip"><span class="nowrap">30–300&nbsp;гостей</span></span></span></p>
           <ul><li>Открытие и&nbsp;слово руководителя</li><li>Награждение лучших по&nbsp;итогам года</li><li>Разговор с&nbsp;залом вместо обязательных конкурсов</li><li>Связки с&nbsp;диджеем, артистами и&nbsp;танцевальными блоками</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
-        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">02</span><span class="fmt-title">День компании, юбилей компании</span><span class="fmt-meta"><span class="chip">3–6&nbsp;часов</span><span class="chip">50–500&nbsp;гостей</span></span><span class="plus" aria-hidden="true"></span></button>
+        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">02</span><span class="fmt-title">День компании, юбилей компании</span><span class="fmt-meta"><span class="chip"><span class="nowrap">3–6&nbsp;часов</span></span><span class="chip"><span class="nowrap">50–500&nbsp;гостей</span></span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">История, люди, достижения.<span class="fmt-chips" hidden><span class="chip">3–6&nbsp;часов</span><span class="chip">50–500&nbsp;гостей</span></span></p>
+          <p class="sub">История, люди, достижения.<span class="fmt-chips" hidden><span class="chip"><span class="nowrap">3–6&nbsp;часов</span></span><span class="chip"><span class="nowrap">50–500&nbsp;гостей</span></span></span></p>
           <ul><li>Программа вокруг истории и&nbsp;ценностей компании</li><li>Поздравления партнёров и&nbsp;руководства</li><li>Отмечаю отделы и&nbsp;людей, без&nbsp;«дежурных» номинаций</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
-        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">03</span><span class="fmt-title">Конференция, церемония награждения</span><span class="fmt-meta"><span class="chip">1–3&nbsp;часа</span><span class="chip">50–500&nbsp;гостей</span></span><span class="plus" aria-hidden="true"></span></button>
+        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">03</span><span class="fmt-title">Конференция, церемония награждения</span><span class="fmt-meta"><span class="chip"><span class="nowrap">1–3&nbsp;часа</span></span><span class="chip"><span class="nowrap">50–500&nbsp;гостей</span></span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Деловая часть, где важен протокол.<span class="fmt-chips" hidden><span class="chip">1–3&nbsp;часа</span><span class="chip">50–500&nbsp;гостей</span></span></p>
+          <p class="sub">Деловая часть, где важен протокол.<span class="fmt-chips" hidden><span class="chip"><span class="nowrap">1–3&nbsp;часа</span></span><span class="chip"><span class="nowrap">50–500&nbsp;гостей</span></span></span></p>
           <ul><li>Открытие, представление спикеров, связки между блоками</li><li>Сценарий награждения: номинации, порядок выхода, музыка</li><li>Тайминг до&nbsp;минуты, работа с&nbsp;суфлёром и&nbsp;режиссёром площадки</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
-        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">04</span><span class="fmt-title">Выездной корпоратив, тимбилдинг</span><span class="fmt-meta"><span class="chip">вечер или&nbsp;1–2&nbsp;дня</span><span class="chip">20–150&nbsp;гостей</span></span><span class="plus" aria-hidden="true"></span></button>
+        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">04</span><span class="fmt-title">Выездной корпоратив, тимбилдинг</span><span class="fmt-meta"><span class="chip">вечер или&nbsp;<span class="nowrap">1–2&nbsp;дня</span></span><span class="chip"><span class="nowrap">20–150&nbsp;гостей</span></span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Загородная база, отель, Ленинградская область.<span class="fmt-chips" hidden><span class="chip">вечер или&nbsp;1–2&nbsp;дня</span><span class="chip">20–150&nbsp;гостей</span></span></p>
+          <p class="sub">Загородная база, отель, Ленинградская область.<span class="fmt-chips" hidden><span class="chip">вечер или&nbsp;<span class="nowrap">1–2&nbsp;дня</span></span><span class="chip"><span class="nowrap">20–150&nbsp;гостей</span></span></span></p>
           <ul><li>Ведение вечерней программы и&nbsp;общих сборов</li><li>Связки между активностями подрядчиков</li><li>Лёгкое вовлечение без&nbsp;принуждения</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
-        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">05</span><span class="fmt-title">Презентация, запуск продукта</span><span class="fmt-meta"><span class="chip">1–2&nbsp;часа</span><span class="chip">30–300&nbsp;гостей</span></span><span class="plus" aria-hidden="true"></span></button>
+        <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">05</span><span class="fmt-title">Презентация, запуск продукта</span><span class="fmt-meta"><span class="chip"><span class="nowrap">1–2&nbsp;часа</span></span><span class="chip"><span class="nowrap">30–300&nbsp;гостей</span></span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Для&nbsp;клиентов, партнёров и&nbsp;прессы.<span class="fmt-chips" hidden><span class="chip">1–2&nbsp;часа</span><span class="chip">30–300&nbsp;гостей</span></span></p>
+          <p class="sub">Для&nbsp;клиентов, партнёров и&nbsp;прессы.<span class="fmt-chips" hidden><span class="chip"><span class="nowrap">1–2&nbsp;часа</span></span><span class="chip"><span class="nowrap">30–300&nbsp;гостей</span></span></span></p>
           <ul><li>Открытие и&nbsp;подводка к&nbsp;ключевому моменту</li><li>Модерация вопросов из&nbsp;зала</li><li>Удерживаю внимание гостей между блоками</li></ul>
         </div></div></div>
       </div>
@@ -836,7 +836,7 @@
     <div class="cta-band rv">
       <div>
         <h3>Проверю вашу дату <em>за&nbsp;15&nbsp;минут</em></h3>
-        <p>Декабрьские пятницы бронируют в&nbsp;октябре–ноябре. Бронь закрепляется договором.</p>
+        <p>Декабрьские пятницы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>. Бронь закрепляется договором.</p>
       </div>
       <a href="#kp" class="btn btn-dark mag" data-focus="date">Проверить дату <span class="arr">→</span></a>
     </div>
@@ -875,7 +875,7 @@
       <div class="pack rv">
         <span class="kicker">Деловая часть</span>
         <h3>Официальная программа</h3>
-        <p class="dur">Конференция, награждение, презентация · 1–3&nbsp;часа</p>
+        <p class="dur">Конференция, награждение, презентация · <span class="nowrap">1–3&nbsp;часа</span></p>
         <ul><li>Бриф и&nbsp;сценарный план</li><li>Подводки к&nbsp;выступлениям</li><li>Сценарий церемонии награждения</li><li>Связь с&nbsp;площадкой и&nbsp;звукорежиссёром</li></ul>
         <div class="price"><b>По&nbsp;запросу</b><span>зависит от&nbsp;даты и&nbsp;длительности</span></div>
         <a href="#kp" class="btn btn-line" data-format="Конференция / награждение">Запросить КП</a>
@@ -883,7 +883,7 @@
       <div class="pack is-main rv">
         <span class="kicker">Чаще всего выбирают</span>
         <h3>Корпоративный вечер</h3>
-        <p class="dur">Новогодний корпоратив, день компании · 3–5&nbsp;часов</p>
+        <p class="dur">Новогодний корпоратив, день компании · <span class="nowrap">3–5&nbsp;часов</span></p>
         <ul><li>Всё&nbsp;из&nbsp;«Официальной программы»</li><li>Сценарий вечера под&nbsp;компанию</li><li>Интерактивы без&nbsp;конкурсов и&nbsp;переодеваний</li><li>Связка с&nbsp;диджеем и&nbsp;артистами</li></ul>
         <div class="price"><b>По&nbsp;запросу</b><span>зависит от&nbsp;даты, формата и&nbsp;длительности</span></div>
         <a href="#kp" class="btn btn-gold mag" data-format="Новогодний корпоратив">Получить КП <span class="arr">→</span></a>
@@ -891,7 +891,7 @@
       <div class="pack rv">
         <span class="kicker">Выезд</span>
         <h3>Выездная программа</h3>
-        <p class="dur">Загородная площадка, 1–2&nbsp;дня</p>
+        <p class="dur">Загородная площадка, <span class="nowrap">1–2&nbsp;дня</span></p>
         <ul><li>Ведение общих сборов и&nbsp;вечерней программы</li><li>Связки между активностями подрядчиков</li><li>Координация тайминга на&nbsp;месте</li><li>Выезд по&nbsp;Ленинградской области</li></ul>
         <div class="price"><b>По&nbsp;запросу</b><span>плюс трансфер и&nbsp;проживание при&nbsp;необходимости</span></div>
         <a href="#kp" class="btn btn-line" data-format="Выездной корпоратив / тимбилдинг">Запросить КП</a>
@@ -968,7 +968,7 @@
         </details>
         <details>
           <summary>За&nbsp;сколько бронировать дату?</summary>
-          <div class="ans"><p>Декабрьские корпоративы бронируют в&nbsp;октябре–ноябре, пятницы и&nbsp;субботы в&nbsp;середине месяца уходят первыми. Чем&nbsp;раньше напишете, тем больше выбор&nbsp;дат.</p></div>
+          <div class="ans"><p>Декабрьские корпоративы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>, пятницы и&nbsp;субботы в&nbsp;середине месяца уходят первыми. Чем&nbsp;раньше напишете, тем больше выбор&nbsp;дат.</p></div>
         </details>
         <details>
           <summary>Что&nbsp;если мероприятие перенесут или&nbsp;отменят?</summary>
