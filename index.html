@@ -209,12 +209,11 @@
   /* 3. Форматы: раскрывающийся указатель */
   .fmts{border-top:1px solid var(--line);}
   .fmt{border-bottom:1px solid var(--line);}
-  .fmt-head{width:100%;display:grid;grid-template-columns:80px 1fr 200px 32px;gap:28px;align-items:center;padding:36px 0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;}
+  .fmt-head{width:100%;display:grid;grid-template-columns:80px 1fr 230px 32px;gap:28px;align-items:center;padding:36px 0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;}
   .fmt-num{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--accent);}
   .fmt-title{font-family:var(--serif);font-size:clamp(26px,3.4vw,50px);line-height:1.05;transition:transform .7s var(--ease),font-style .3s;}
   .fmt-head:hover .fmt-title,.fmt.open .fmt-title{transform:translateX(14px);font-style:italic;}
   .chip{display:block;font-family:var(--sans);font-style:normal;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
-  .fmt-head .chip + .chip{margin-top:-22px;}
   .fmt-meta{display:flex;flex-direction:column;gap:6px;}
   .plus{width:32px;height:32px;position:relative;transition:transform .6s var(--ease);}
   .plus::before,.plus::after{content:'';position:absolute;left:50%;top:50%;width:22px;height:1px;background:currentColor;transform:translate(-50%,-50%);}
