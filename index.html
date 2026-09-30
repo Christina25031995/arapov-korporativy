@@ -594,6 +594,9 @@
   .video-card:hover .video-thumb .poster{transform:scale(1.04);filter:brightness(.95);}
   .video-thumb video{z-index:3;background:#000;object-fit:contain;}
   .video-thumb .tag,.video-thumb .soon,.play{z-index:2;}
+  /* Без одиноких слов на последней строке */
+  p,li,dd,summary,figcaption{text-wrap:pretty;}
+  h1,h2,h3,h4{text-wrap:balance;}
 </style>
 </head>
 <body>
@@ -633,7 +636,7 @@
     </div>
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="lead rv" style="--d:.5s">Новогодние корпоративы, дни компании, награждения и&nbsp;конференции. Сценарий под&nbsp;вашу компанию, официальная часть до&nbsp;минуты и&nbsp;юмор, за&nbsp;который не&nbsp;придётся краснеть перед руководством.</p>
+        <p class="lead rv" style="--d:.5s">Новогодние корпоративы, дни компании, награждения и&nbsp;конференции. Сценарий под&nbsp;вашу компанию, официальная часть до&nbsp;минуты и&nbsp;юмор, за&nbsp;который не&nbsp;придётся краснеть перед&nbsp;руководством.</p>
         <div class="hero-actions rv" style="--d:.65s">
           <!-- ЗАМЕНИТЬ: подтвердить у Тимофея обещание «КП за 15 минут» и его рабочие часы (сейчас везде: «в рабочее время») -->
           <a href="#kp" class="btn btn-gold mag">Получить КП&nbsp;за&nbsp;15&nbsp;минут <span class="arr">→</span></a>
@@ -667,10 +670,10 @@
 <!-- 2. КОРОТКО ДЛЯ РУКОВОДИТЕЛЯ (интерес: решение принимают несколько человек) -->
 <section class="brief light" id="brief">
   <div class="wrap">
-    <div class="sec-head solo"><span class="eyebrow rv">Коротко для&nbsp;руководителя</span><h2 data-split>Пять пунктов, если <em>нет времени</em></h2></div>
+    <div class="sec-head solo"><span class="eyebrow rv">Коротко для&nbsp;руководителя</span><h2 data-split>Пять пунктов, если <em>нет&nbsp;времени</em></h2></div>
     <div class="brief-box">
       <div>
-        <p class="rv">Удобно переслать тому, кто согласует бюджет и&nbsp;подрядчика.</p>
+        <p class="rv">Удобно переслать тому, кто согласует бюджет&nbsp;и&nbsp;подрядчика.</p>
         <div class="brief-actions rv">
           <button type="button" class="btn btn-dark mag" id="share-btn">Скопировать ссылку</button>
           <a href="#kp" class="btn btn-line mag" data-deck>Презентация PDF</a>
@@ -678,11 +681,11 @@
         <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
       </div>
       <ol class="brief-list" data-stagger>
-        <li class="rv"><span><b>Без&nbsp;пошлых конкурсов и&nbsp;переодеваний.</b> Юмор интеллигентный, безопасный для&nbsp;репутации компании.</span></li>
-        <li class="rv"><span><b>Официальная часть по&nbsp;таймингу.</b> Речи, награждения, выход первого лица, всё&nbsp;по&nbsp;согласованному плану.</span></li>
-        <li class="rv"><span><b>Сценарий под&nbsp;компанию,</b> а&nbsp;не&nbsp;шаблон: бриф 30&nbsp;минут, согласование с&nbsp;вами до&nbsp;мероприятия.</span></li>
-        <li class="rv"><span><b>Держу вечер при&nbsp;форс-мажорах:</b> пять отключений света за&nbsp;вечер, 20&nbsp;минут ожидания артиста.</span></li>
-        <li class="rv"><span><b>Договор, юрлицо, безнал,</b> закрывающие документы. КП&nbsp;в&nbsp;течение 15&nbsp;минут.</span></li>
+        <li class="rv"><span><b>Без&nbsp;пошлых конкурсов и&nbsp;переодеваний.</b> Юмор интеллигентный, безопасный для&nbsp;репутации&nbsp;компании.</span></li>
+        <li class="rv"><span><b>Официальная часть по&nbsp;таймингу.</b> Речи, награждения, выход первого лица, всё&nbsp;по&nbsp;согласованному&nbsp;плану.</span></li>
+        <li class="rv"><span><b>Сценарий под&nbsp;компанию,</b> а&nbsp;не&nbsp;шаблон: бриф 30&nbsp;минут, согласование с&nbsp;вами&nbsp;до&nbsp;мероприятия.</span></li>
+        <li class="rv"><span><b>Держу вечер при&nbsp;форс-мажорах:</b> пять отключений света за&nbsp;вечер, 20&nbsp;минут ожидания&nbsp;артиста.</span></li>
+        <li class="rv"><span><b>Договор, юрлицо, безнал,</b> закрывающие документы. КП&nbsp;в&nbsp;течение&nbsp;15&nbsp;минут.</span></li>
       </ol>
     </div>
   </div>
@@ -692,57 +695,96 @@
 <section class="formats" id="formats">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Три формата <em>под вашу задачу</em></h2></div>
-      <p class="lead rv">Программу собираю под компанию, её людей и повод. Формат подскажу на первом созвоне.</p>
+      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Три формата <em>под вашу&nbsp;задачу</em></h2></div>
+      <p class="lead rv">Программу собираю под компанию, её людей и повод. Формат подскажу на первом&nbsp;созвоне.</p>
     </div>
     <!-- ЗАМЕНИТЬ: состав форматов по словам Тимофея (камерный / большой / третий уточнить по записи встречи) -->
     <div class="fmts" data-stagger>
       <div class="fmt rv open">
         <button class="fmt-head" type="button" aria-expanded="true"><span class="fmt-num">01</span><span class="fmt-title">Камерный корпоратив</span><span class="fmt-meta"><span class="chip">отдел или небольшая команда</span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Когда все знают друг друга по имени.<span class="fmt-chips" hidden><span class="chip">отдел или небольшая команда</span></span></p>
-          <ul><li>Разговор с залом вместо обязательных конкурсов</li><li>Истории и поводы команды в программе</li><li>Итоги года и награждение без официоза</li></ul>
+          <p class="sub">Когда все знают друг друга по имени.<span class="fmt-chips" hidden><span class="chip">отдел или небольшая&nbsp;команда</span></span></p>
+          <ul><li>Разговор с залом вместо обязательных&nbsp;конкурсов</li><li>Истории и поводы команды в&nbsp;программе</li><li>Итоги года и награждение без&nbsp;официоза</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
         <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">02</span><span class="fmt-title">Большой корпоратив</span><span class="fmt-meta"><span class="chip">вся компания</span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">Новогодний вечер, день или юбилей компании.<span class="fmt-chips" hidden><span class="chip">вся компания</span></span></p>
-          <ul><li>Официальная часть: слово руководителя, награждение</li><li>Интерактив, который держит большой зал</li><li>Свой диджей и технические подрядчики в команде</li></ul>
+          <p class="sub">Новогодний вечер, день или юбилей компании.<span class="fmt-chips" hidden><span class="chip">вся&nbsp;компания</span></span></p>
+          <ul><li>Официальная часть: слово руководителя,&nbsp;награждение</li><li>Интерактив, который держит большой&nbsp;зал</li><li>Свой диджей и технические подрядчики в&nbsp;команде</li></ul>
         </div></div></div>
       </div>
       <div class="fmt rv">
         <button class="fmt-head" type="button" aria-expanded="false"><span class="fmt-num">03</span><span class="fmt-title">Выездной корпоратив</span><span class="fmt-meta"><span class="chip">загородная площадка</span></span><span class="plus" aria-hidden="true"></span></button>
         <div class="fmt-body"><div class="fmt-inner"><div class="fmt-content">
-          <p class="sub">База отдыха, отель, Ленинградская область.<span class="fmt-chips" hidden><span class="chip">загородная площадка</span></span></p>
-          <ul><li>Ведение вечерней программы и&nbsp;общих сборов</li><li>Связки между активностями подрядчиков</li><li>Лёгкое вовлечение без&nbsp;принуждения</li></ul>
+          <p class="sub">База отдыха, отель, Ленинградская область.<span class="fmt-chips" hidden><span class="chip">загородная&nbsp;площадка</span></span></p>
+          <ul><li>Ведение вечерней программы и&nbsp;общих&nbsp;сборов</li><li>Связки между активностями&nbsp;подрядчиков</li><li>Лёгкое вовлечение&nbsp;без&nbsp;принуждения</li></ul>
         </div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 4. ВИДЕО -->
-<section class="videos" id="videos" style="padding-top:0;">
+<!-- 4. ДЛЯ КОГО -->
+<section id="for-whom" style="padding-top:0;">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Видео</span><h2 data-split>Как это выглядит <em>на&nbsp;сцене</em></h2></div>
-      <p class="lead rv">Живые фрагменты с&nbsp;корпоративов. Полные записи пришлю вместе с&nbsp;КП.</p>
+      <div><span class="eyebrow rv">Для&nbsp;кого</span><h2 data-split>Кому со&nbsp;мной <em>проще&nbsp;всего</em></h2></div>
+      <p class="lead rv">Корпоратив согласуют несколько человек, и&nbsp;у&nbsp;каждого свой вопрос. Вот что&nbsp;получает&nbsp;каждый.</p>
     </div>
-    <div class="video-grid two" data-stagger>
-      <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное промо</h3><p>Как проходит вечер для&nbsp;компании</p></div></div>
-      <!-- ЗАМЕНИТЬ: игровое промо, когда Тимофей пришлёт файл (добавить data-video и постер) -->
-      <div class="video-card rv"><div class="video-thumb"><span class="tag">02 · Игровое промо</span><span class="soon">скоро</span><div class="play"></div></div><div class="vinfo"><h3>Игровое промо</h3><p>Интерактивы без&nbsp;конкурсов «для&nbsp;галочки»</p></div></div>
+    <div class="audience" data-stagger>
+      <div class="aud rv">
+        <span class="n">01</span>
+        <h3>HR&nbsp;и&nbsp;внутренние&nbsp;коммуникации</h3>
+        <span class="role">Отвечаете за&nbsp;атмосферу и&nbsp;команду</span>
+        <dl>
+          <dt>Задача</dt><dd>Вечер, на&nbsp;который хочется прийти, где новички и&nbsp;интроверты не&nbsp;чувствуют себя&nbsp;лишними.</dd>
+          <dt>Что&nbsp;получаете</dt><dd>Программу под&nbsp;ценности и&nbsp;язык компании, живой диалог вместо обязательных конкурсов, понятный документ&nbsp;для&nbsp;согласования.</dd>
+        </dl>
+      </div>
+      <div class="aud rv">
+        <span class="n">02</span>
+        <h3>Ивент-агентства</h3>
+        <span class="role">Собираете проект и&nbsp;отвечаете перед клиентом</span>
+        <dl>
+          <dt>Задача</dt><dd>Ведущий, который не&nbsp;сорвёт тайминг, быстро отвечает и&nbsp;не&nbsp;создаёт лишней&nbsp;работы.</dd>
+          <dt>Что&nbsp;получаете</dt><dd>Быстрое КП, сценарный план, свой диджей и&nbsp;звук, связь с&nbsp;площадкой, спокойствие&nbsp;при&nbsp;форс-мажорах.</dd>
+        </dl>
+      </div>
+      <div class="aud rv">
+        <span class="n">03</span>
+        <h3>Собственники&nbsp;и&nbsp;руководители</h3>
+        <span class="role">Выступаете и&nbsp;отвечаете за&nbsp;имидж</span>
+        <dl>
+          <dt>Задача</dt><dd>Достойно подвести итоги, наградить лучших и&nbsp;не&nbsp;рисковать&nbsp;репутацией.</dd>
+          <dt>Что&nbsp;получаете</dt><dd>Подготовленные подводки к&nbsp;речам, чёткую церемонию награждения, уважительный тон&nbsp;со&nbsp;сцены.</dd>
+        </dl>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 5. КТО МЕНЯ ВЫБИРАЕТ -->
+<!-- 5. ВИДЕО -->
+<section class="videos" id="videos" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Видео</span><h2 data-split>Как это выглядит <em>на&nbsp;сцене</em></h2></div>
+      <p class="lead rv">Живые фрагменты с&nbsp;корпоративов. Полные записи пришлю вместе&nbsp;с&nbsp;КП.</p>
+    </div>
+    <div class="video-grid two" data-stagger>
+      <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное&nbsp;промо</h3><p>Как проходит вечер&nbsp;для&nbsp;компании</p></div></div>
+      <!-- ЗАМЕНИТЬ: игровое промо, когда Тимофей пришлёт файл (добавить data-video и постер) -->
+      <div class="video-card rv"><div class="video-thumb"><span class="tag">02 · Игровое промо</span><span class="soon">скоро</span><div class="play"></div></div><div class="vinfo"><h3>Игровое&nbsp;промо</h3><p>Интерактивы без&nbsp;конкурсов&nbsp;«для&nbsp;галочки»</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. КТО МЕНЯ ВЫБИРАЕТ -->
 <section class="clients" id="clients">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Кто меня выбирает</span><h2 data-split>Компании, которые <em>мне доверяют</em></h2></div>
-      <p class="lead rv">IT-компании, холдинги, бизнес и&nbsp;сотрудники ведомств.</p>
+      <div><span class="eyebrow rv">Кто меня выбирает</span><h2 data-split>Компании, которые <em>мне&nbsp;доверяют</em></h2></div>
+      <p class="lead rv">IT-компании, холдинги, бизнес и&nbsp;сотрудники&nbsp;ведомств.</p>
     </div>
     <!-- Компании по словам Тимофея 30.09. Логотипы взяты с официальных сайтов компаний и Викисклада (Газпром). -->
     <div class="logo-row" data-stagger>
@@ -763,7 +805,7 @@
   </div>
 </section>
 
-<!-- 6. СТИЛЬ ВЕДЕНИЯ -->
+<!-- 7. СТИЛЬ ВЕДЕНИЯ -->
 <section id="style" class="light">
   <div class="wrap">
     <div class="sec-head solo"><span class="eyebrow rv">Стиль ведения</span><h2 data-split>Корпоратив <em>без&nbsp;неловкости</em></h2></div>
@@ -772,30 +814,29 @@
         <img src="images/action-timofey.jpg" alt="Тимофей Арапов ведёт мероприятие" loading="lazy">
       </div>
       <div>
-        <p class="lead rv">Разный зал, от&nbsp;стажёров до&nbsp;директоров, и&nbsp;половина не&nbsp;любит «участвовать». Поэтому я&nbsp;веду так, чтобы неловко не&nbsp;было никому.</p>
+        <p class="lead rv">Разный зал, от&nbsp;стажёров до&nbsp;директоров, и&nbsp;половина не&nbsp;любит «участвовать». Поэтому я&nbsp;веду так, чтобы неловко не&nbsp;было&nbsp;никому.</p>
         <div class="fears">
           <div class="fears-head"><span>Как бывает обычно</span><span>Как у&nbsp;меня</span></div>
-          <div class="fear rv"><div><s>Конкурсы с&nbsp;переодеваниями и&nbsp;пошлые шутки</s></div><p>Интеллигентный юмор, без&nbsp;переодеваний и&nbsp;шуток «на&nbsp;грани»</p></div>
-          <div class="fear rv"><div><s>Людей тянут на&nbsp;сцену силой</s></div><p>Участвует тот, кто хочет. Интроверты спокойно наблюдают</p></div>
-          <div class="fear rv"><div><s>Ведущий весь вечер в&nbsp;центре внимания</s></div><p>В&nbsp;центре команда и&nbsp;её&nbsp;поводы, ведущий рядом</p></div>
-          <div class="fear rv"><div><s>Шаблонная программа: те&nbsp;же конкурсы, что&nbsp;и&nbsp;на&nbsp;прошлой неделе у&nbsp;соседей</s></div><p>Корпоратив-сказка: нейросеть рисует каждого сотрудника персонажем, и&nbsp;вечер строится вокруг ваших людей</p></div>
-          <div class="fear rv"><div><s>Пауза, если что-то пошло не&nbsp;так</s></div><p>Свет гас пять раз за&nbsp;вечер, артист задержался на&nbsp;20&nbsp;минут. Зал этого не&nbsp;заметил</p></div>
+          <div class="fear rv"><div><s>Конкурсы с&nbsp;переодеваниями и&nbsp;пошлые шутки</s></div><p>Интеллигентный юмор, без&nbsp;переодеваний и&nbsp;шуток&nbsp;«на&nbsp;грани»</p></div>
+          <div class="fear rv"><div><s>Людей тянут на&nbsp;сцену силой</s></div><p>Участвует тот, кто хочет. Интроверты спокойно&nbsp;наблюдают</p></div>
+          <div class="fear rv"><div><s>Ведущий весь вечер в&nbsp;центре внимания</s></div><p>В&nbsp;центре команда и&nbsp;её&nbsp;поводы, ведущий&nbsp;рядом</p></div>
+          <div class="fear rv"><div><s>Шаблонная программа: те&nbsp;же конкурсы, что&nbsp;и&nbsp;на&nbsp;прошлой неделе у&nbsp;соседей</s></div><p>Корпоратив-сказка: нейросеть рисует каждого сотрудника персонажем, и&nbsp;вечер строится вокруг ваших&nbsp;людей</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 7. ОФИЦИАЛЬНАЯ ЧАСТЬ + СЦЕНАРНЫЙ ПЛАН -->
+<!-- 8. ОФИЦИАЛЬНАЯ ЧАСТЬ + СЦЕНАРНЫЙ ПЛАН -->
 <section class="official" id="official">
   <div class="wrap">
     <div class="sec-head solo"><span class="eyebrow rv">Сценарий</span><h2 data-split>Речи, награждения и&nbsp;тайминг <em>до&nbsp;минуты</em></h2></div>
     <div class="off-grid" style="margin-top:0;">
       <div data-stagger>
-        <div class="off-item rv"><i>01</i><div><h3>Выступления руководителей</h3><p>Заранее узнаю, кто и&nbsp;о&nbsp;чём говорит, готовлю подводки, договариваемся о&nbsp;длительности.</p></div></div>
-        <div class="off-item rv"><i>02</i><div><h3>Церемония награждения</h3><p>Номинации, порядок выхода, кто вручает, музыка на&nbsp;выход. Лауреаты знают, когда их&nbsp;очередь.</p></div></div>
-        <div class="off-item rv"><i>03</i><div><h3>Новогодние традиции компании</h3><p>Что случилось с&nbsp;вами за&nbsp;год, кого обсуждали чаще всего, квиз по&nbsp;факапам года. Смешно, но&nbsp;по-доброму.</p></div></div>
-        <div class="off-item rv"><i>04</i><div><h3>Своя команда</h3><p>Диджей и&nbsp;технические подрядчики работают со&nbsp;мной. Один поминутный план на&nbsp;всех.</p></div></div>
+        <div class="off-item rv"><i>01</i><div><h3>Выступления&nbsp;руководителей</h3><p>Заранее узнаю, кто и&nbsp;о&nbsp;чём говорит, готовлю подводки, договариваемся&nbsp;о&nbsp;длительности.</p></div></div>
+        <div class="off-item rv"><i>02</i><div><h3>Церемония&nbsp;награждения</h3><p>Номинации, порядок выхода, кто вручает, музыка на&nbsp;выход. Лауреаты знают, когда&nbsp;их&nbsp;очередь.</p></div></div>
+        <div class="off-item rv"><i>03</i><div><h3>Новогодние традиции&nbsp;компании</h3><p>Что случилось с&nbsp;вами за&nbsp;год, кого обсуждали чаще всего, квиз по&nbsp;факапам года. Смешно,&nbsp;но&nbsp;по-доброму.</p></div></div>
+        <div class="off-item rv"><i>04</i><div><h3>Своя&nbsp;команда</h3><p>Диджей и&nbsp;технические подрядчики работают со&nbsp;мной. Один поминутный план&nbsp;на&nbsp;всех.</p></div></div>
       </div>
       <div>
         <div class="runsheet" id="runsheet" aria-label="Пример фрагмента сценарного плана">
@@ -807,64 +848,127 @@
           <div class="rs-row"><time>20:25</time><span>Танцевальный блок<em>диджей</em></span></div>
           <div class="rs-row"><time>20:45</time><span>Квиз по&nbsp;факапам года<em>ведущий · по&nbsp;материалам брифа</em></span></div>
         </div>
-        <p class="runsheet-cap">Иллюстрация формата. Реальный план собираем под&nbsp;вашу программу и&nbsp;площадку.</p>
+        <p class="runsheet-cap">Иллюстрация формата. Реальный план собираем под&nbsp;вашу программу&nbsp;и&nbsp;площадку.</p>
         <!-- ЗАМЕНИТЬ: Тимофей пришлёт свои примеры сценарного плана -->
       </div>
     </div>
     <div class="cta-band rv">
       <h3>Проверю вашу дату <em>за&nbsp;15&nbsp;минут</em></h3>
-      <div class="cta-row"><p>Декабрьские пятницы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>. Бронь закрепляется договором.</p><a href="#kp" class="btn btn-dark mag" data-focus="date">Проверить дату <span class="arr">→</span></a></div>
+      <div class="cta-row"><p>Декабрьские пятницы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>. Бронь закрепляется&nbsp;договором.</p><a href="#kp" class="btn btn-dark mag" data-focus="date">Проверить дату <span class="arr">→</span></a></div>
     </div>
   </div>
 </section>
 
-<!-- 8. СТОИМОСТЬ + УСЛОВИЯ -->
+<!-- 9. ФОРС-МАЖОРЫ (главный страх ивент-менеджера) + призыв -->
+<section id="risks">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Если что-то пошло не&nbsp;так</span><h2 data-split>Форс-мажоры гости <em>не&nbsp;должны&nbsp;замечать</em></h2></div>
+      <p class="lead rv">На&nbsp;живом мероприятии что-то идёт не&nbsp;по&nbsp;плану почти всегда. Вопрос в&nbsp;том,&nbsp;увидит&nbsp;ли&nbsp;это&nbsp;зал.</p>
+    </div>
+    <div class="risk-grid" data-stagger>
+      <div class="case rv">
+        <span class="kicker">Реальная история</span>
+        <span class="big"><span data-count="5">5</span><small>раз</small></span>
+        <h3>за&nbsp;вечер отключался&nbsp;свет</h3>
+        <p>Каждый раз программа продолжалась, гости оставались в&nbsp;зале, а&nbsp;вечер не&nbsp;превратился в&nbsp;череду неловких&nbsp;пауз.</p>
+      </div>
+      <div class="case rv">
+        <span class="kicker">Реальная история</span>
+        <span class="big"><span data-count="20">20</span><small>минут</small></span>
+        <h3>держал зал до&nbsp;выхода&nbsp;артиста</h3>
+        <p>Артист задерживался, а&nbsp;пауза в&nbsp;программе незаметно превратилась в&nbsp;живой разговор&nbsp;с&nbsp;залом.</p>
+      </div>
+      <div class="case rv">
+        <span class="kicker">Что&nbsp;делаю заранее</span>
+        <ul>
+          <li>Сверяю тайминг с&nbsp;площадкой&nbsp;и&nbsp;диджеем</li>
+          <li>Держу запасные блоки на&nbsp;случай сдвига&nbsp;программы</li>
+          <li>Договариваемся, кто принимает решения в&nbsp;день&nbsp;мероприятия</li>
+          <li>Приезжаю заранее и&nbsp;проверяю звук&nbsp;и&nbsp;сцену</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. КАК ПРОХОДИТ РАБОТА -->
+<section id="process" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Как&nbsp;работаем</span><h2 data-split>Шесть шагов <em>от&nbsp;заявки&nbsp;до&nbsp;отчёта</em></h2></div>
+      <p class="lead rv">Ваше время уходит только на&nbsp;бриф и&nbsp;согласование. Остальное беру&nbsp;на&nbsp;себя.</p>
+    </div>
+    <div class="steps" id="steps">
+      <div class="steps-line"><i id="steps-fill"></i></div>
+      <div class="step"><span class="dotn">01</span><div><h3>Бриф,&nbsp;30&nbsp;минут</h3><p>Созвон: задачи вечера, состав гостей, что&nbsp;важно компании, о&nbsp;чём лучше&nbsp;не&nbsp;шутить.</p></div><div class="you"><b>От&nbsp;вас</b>30&nbsp;минут и&nbsp;контакт ответственного</div></div>
+      <div class="step"><span class="dotn">02</span><div><h3>Сценарий&nbsp;под&nbsp;компанию</h3><p>Программа на&nbsp;основе брифа: официальная часть, интерактивы, связки,&nbsp;музыка.</p></div><div class="you"><b>От&nbsp;вас</b>имена, номинации, внутренние поводы</div></div>
+      <div class="step"><span class="dotn">03</span><div><h3>Согласование&nbsp;с&nbsp;руководителем</h3><p>Присылаю документ, который удобно показать руководству. Вношу&nbsp;правки.</p></div><div class="you"><b>От&nbsp;вас</b>одно согласование</div></div>
+      <div class="step"><span class="dotn">04</span><div><h3>Своя&nbsp;команда</h3><p>Мой диджей и&nbsp;технические подрядчики. Сверяю тайминг и&nbsp;технику&nbsp;с&nbsp;площадкой.</p></div><div class="you"><b>От&nbsp;вас</b>контакт площадки</div></div>
+      <div class="step"><span class="dotn">05</span><div><h3>Вечер</h3><p>Приезжаю заранее, проверяю звук и&nbsp;сцену, веду по&nbsp;плану и&nbsp;решаю вопросы&nbsp;на&nbsp;месте.</p></div><div class="you"><b>От&nbsp;вас</b>наслаждаться вечером</div></div>
+            <div class="step"><span class="dotn">06</span><div><h3>Отчёт&nbsp;и&nbsp;фото</h3><p>После мероприятия отправляю короткий итог и&nbsp;кадры со&nbsp;сцены для&nbsp;внутренних&nbsp;коммуникаций.</p></div><div class="you"><b>От&nbsp;вас</b>обратная связь, если захотите</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. СТОИМОСТЬ + УСЛОВИЯ -->
 <section id="price" class="light">
   <div class="wrap">
     <div class="sec-head">
       <div><span class="eyebrow rv">Стоимость</span><h2 data-split>Корпоративный <em>вечер</em></h2></div>
-      <p class="lead rv">Одна понятная услуга: ведение вечера под&nbsp;ключ со&nbsp;своей командой.</p>
+      <p class="lead rv">Одна понятная услуга: ведение вечера под&nbsp;ключ со&nbsp;своей&nbsp;командой.</p>
     </div>
     <div class="one-price" data-stagger>
       <div class="op-main rv">
         <span class="kicker">До&nbsp;6&nbsp;часов</span>
         <div class="op-sum"><span class="nowrap">100 000–150 000</span>&nbsp;₽</div>
-        <p>Стоимость зависит от&nbsp;выбранной даты: декабрьские пятницы и&nbsp;субботы в&nbsp;пике.</p>
+        <p>Стоимость зависит от&nbsp;выбранной даты: декабрьские пятницы и&nbsp;субботы&nbsp;в&nbsp;пике.</p>
         <a href="#kp" class="btn btn-gold mag" data-format="Большой корпоратив">Получить КП <span class="arr">→</span></a>
       </div>
       <ul class="op-list rv">
-        <li>Бриф и&nbsp;сценарий под&nbsp;компанию</li>
-        <li>Официальная часть и&nbsp;награждение</li>
-        <li>Интерактивы без&nbsp;конкурсов и&nbsp;переодеваний</li>
-        <li>Свой диджей и&nbsp;технические подрядчики</li>
-        <li>Поминутный план для&nbsp;вас и&nbsp;площадки</li>
+        <li>Бриф и&nbsp;сценарий&nbsp;под&nbsp;компанию</li>
+        <li>Официальная часть&nbsp;и&nbsp;награждение</li>
+        <li>Интерактивы без&nbsp;конкурсов&nbsp;и&nbsp;переодеваний</li>
+        <li>Свой диджей и&nbsp;технические&nbsp;подрядчики</li>
+        <li>Поминутный план для&nbsp;вас&nbsp;и&nbsp;площадки</li>
       </ul>
-    </div>
-    <div class="terms" data-stagger>
-      <div class="term rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после подписания.</p></div>
-      <div class="term rv"><i>02</i><h3>Предоплата 50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями и&nbsp;агентствами.</p></div>
-      <div class="term rv"><i>03</i><h3>Документы</h3><p>Закрывающие документы для&nbsp;бухгалтерии после мероприятия.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 9. ВОПРОСЫ -->
+<!-- 12. ДОКУМЕНТЫ И ГАРАНТИИ -->
+<section class="docs" id="docs">
+  <div class="wrap">
+    <span class="eyebrow rv">Документы и&nbsp;гарантии</span>
+    <h2 data-split>Работаю <em>по&nbsp;договору</em></h2>
+    <p class="lead rv" style="margin-top:24px;">Чтобы бухгалтерии и&nbsp;юристам не&nbsp;пришлось ничего&nbsp;придумывать.</p>
+    <!-- ЗАМЕНИТЬ: юрстатус Тимофея (ИП / самозанятый) и какие закрывающие документы выдаёт -->
+    <div class="doc-grid" data-stagger>
+      <div class="doc rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат, длительность и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после&nbsp;подписания.</p></div>
+      <div class="doc rv"><i>02</i><h3>Предоплата&nbsp;50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями&nbsp;и&nbsp;агентствами.</p></div>
+      <div class="doc rv"><i>03</i><h3>Закрывающие&nbsp;документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
+      <div class="doc rv"><i>04</i><h3>Перенос&nbsp;даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13. ВОПРОСЫ -->
 <section id="faq">
   <div class="wrap">
     <div class="sec-head solo"><span class="eyebrow rv">Вопросы</span><h2 data-split>Частые вопросы <em>от&nbsp;компаний</em></h2></div>
     <div class="faq-grid">
       <div class="faq-side">
-        <p class="rv">Не&nbsp;нашли ответа? Спросите в&nbsp;форме или&nbsp;по&nbsp;телефону, отвечу в&nbsp;тот&nbsp;же день.</p>
+        <p class="rv">Не&nbsp;нашли ответа? Спросите в&nbsp;форме или&nbsp;по&nbsp;телефону, отвечу в&nbsp;тот&nbsp;же&nbsp;день.</p>
         <a href="tel:+79522875375" class="text-link rv">+7&nbsp;952&nbsp;287-53-75</a>
       </div>
       <div class="faq-list">
-        <details open><summary>Работаете по&nbsp;договору с&nbsp;юрлицом? Можно по&nbsp;безналу?</summary><div class="ans"><p>Да. Договор с&nbsp;компанией или агентством, предоплата 50% по&nbsp;счёту, после мероприятия закрывающие документы.</p></div></details>
-        <details><summary>Сколько стоит?</summary><div class="ans"><p>Корпоративный вечер до&nbsp;6&nbsp;часов стоит от&nbsp;100 000 до&nbsp;150 000&nbsp;₽. Точная сумма зависит от&nbsp;даты, пришлю её&nbsp;в&nbsp;КП.</p></div></details>
-        <details><summary>Можно совсем без&nbsp;конкурсов?</summary><div class="ans"><p>Да. Основа программы у&nbsp;меня живой диалог с&nbsp;залом. Интерактивы, если нужны, подбираю под&nbsp;компанию и&nbsp;согласую заранее.</p></div></details>
-        <details><summary>У&nbsp;нас разный состав: от&nbsp;стажёров до&nbsp;директоров.</summary><div class="ans"><p>Это обычная ситуация. Никого не&nbsp;вытаскиваю на&nbsp;сцену силой: кто хочет, включается, кто не&nbsp;хочет, спокойно наблюдает и&nbsp;не&nbsp;скучает.</p></div></details>
-        <details><summary>Нужно искать диджея и&nbsp;звук отдельно?</summary><div class="ans"><p>Нет. В&nbsp;моей команде свой диджей и&nbsp;технические подрядчики, мы&nbsp;работаем по&nbsp;одному плану.</p></div></details>
-        <details><summary>Что если мероприятие перенесут?</summary><div class="ans"><p>Подбираем новую свободную дату вместе. Условия переноса и&nbsp;отмены заранее прописываем в&nbsp;договоре.</p></div></details>
-        <details><summary>За&nbsp;сколько бронировать дату?</summary><div class="ans"><p>Декабрьские корпоративы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>, пятницы и&nbsp;субботы уходят первыми. Чем раньше напишете, тем больше выбор.</p></div></details>
+        <details open><summary>Работаете по&nbsp;договору с&nbsp;юрлицом? Можно&nbsp;по&nbsp;безналу?</summary><div class="ans"><p>Да. Договор с&nbsp;компанией или агентством, предоплата 50% по&nbsp;счёту, после мероприятия закрывающие&nbsp;документы.</p></div></details>
+        <details><summary>Сколько&nbsp;стоит?</summary><div class="ans"><p>Корпоративный вечер до&nbsp;6&nbsp;часов стоит от&nbsp;100 000 до&nbsp;150 000&nbsp;₽. Точная сумма зависит от&nbsp;даты, пришлю&nbsp;её&nbsp;в&nbsp;КП.</p></div></details>
+        <details><summary>Можно совсем&nbsp;без&nbsp;конкурсов?</summary><div class="ans"><p>Да. Основа программы у&nbsp;меня живой диалог с&nbsp;залом. Интерактивы, если нужны, подбираю под&nbsp;компанию и&nbsp;согласую&nbsp;заранее.</p></div></details>
+        <details><summary>У&nbsp;нас разный состав: от&nbsp;стажёров&nbsp;до&nbsp;директоров.</summary><div class="ans"><p>Это обычная ситуация. Никого не&nbsp;вытаскиваю на&nbsp;сцену силой: кто хочет, включается, кто не&nbsp;хочет, спокойно наблюдает&nbsp;и&nbsp;не&nbsp;скучает.</p></div></details>
+        <details><summary>Нужно искать диджея и&nbsp;звук&nbsp;отдельно?</summary><div class="ans"><p>Нет. В&nbsp;моей команде свой диджей и&nbsp;технические подрядчики, мы&nbsp;работаем по&nbsp;одному&nbsp;плану.</p></div></details>
+        <details><summary>Что если мероприятие&nbsp;перенесут?</summary><div class="ans"><p>Подбираем новую свободную дату вместе. Условия переноса и&nbsp;отмены заранее прописываем&nbsp;в&nbsp;договоре.</p></div></details>
+        <details><summary>За&nbsp;сколько бронировать&nbsp;дату?</summary><div class="ans"><p>Декабрьские корпоративы бронируют в&nbsp;<span class="nowrap">октябре–ноябре</span>, пятницы и&nbsp;субботы уходят первыми. Чем раньше напишете, тем больше&nbsp;выбор.</p></div></details>
       </div>
     </div>
   </div>
@@ -877,10 +981,10 @@
     <div class="contact-grid">
       <div>
         <ol class="after" data-stagger>
-          <li class="rv"><span><b>Проверю дату</b> и&nbsp;отвечу в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее время.</span></li>
-          <li class="rv"><span><b>Пришлю КП</b> со&nbsp;стоимостью под&nbsp;ваш формат и&nbsp;длительность.</span></li>
-          <li class="rv"><span><b>Если нужно,</b> приложу презентацию для&nbsp;руководителя.</span></li>
-          <li class="rv"><span><b>Назначим бриф</b> на&nbsp;30&nbsp;минут в&nbsp;удобное время.</span></li>
+          <li class="rv"><span><b>Проверю дату</b> и&nbsp;отвечу в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее&nbsp;время.</span></li>
+          <li class="rv"><span><b>Пришлю КП</b> со&nbsp;стоимостью под&nbsp;ваш формат&nbsp;и&nbsp;длительность.</span></li>
+          <li class="rv"><span><b>Если нужно,</b> приложу презентацию&nbsp;для&nbsp;руководителя.</span></li>
+          <li class="rv"><span><b>Назначим бриф</b> на&nbsp;30&nbsp;минут в&nbsp;удобное&nbsp;время.</span></li>
         </ol>
         <a href="tel:+79522875375" class="phone rv">+7&nbsp;952&nbsp;287-53-75</a>
         <div class="contact-alt rv">
@@ -927,7 +1031,7 @@
         </div>
         <div class="full form-actions">
           <button type="submit" class="btn btn-gold mag">Получить КП <span class="arr">→</span></button>
-          <p>Ни&nbsp;к&nbsp;чему не&nbsp;обязывает. Данные используются только для&nbsp;ответа на&nbsp;запрос.</p>
+          <p>Ни&nbsp;к&nbsp;чему не&nbsp;обязывает. Данные используются только для&nbsp;ответа&nbsp;на&nbsp;запрос.</p>
         </div>
         <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
       </form>
@@ -949,8 +1053,8 @@
 <nav class="tabbar" id="tabbar" aria-label="Разделы страницы">
   <a href="#formats" data-sec="formats"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Форматы</a>
   <a href="#videos" data-sec="videos"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10 8.8v6.4l5.2-3.2z"/></svg>Видео</a>
-  <a href="#clients" data-sec="clients"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9.9 5.6-5-2.6-5 2.6.9-5.6-4-3.9 5.6-.8z"/></svg>Клиенты</a>
   <a href="#price" data-sec="price"><svg viewBox="0 0 24 24"><path d="M8 20V4h5.5a4 4 0 010 8H6M6 16h8"/></svg>Цена</a>
+  <a href="#faq" data-sec="faq"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.4a2.5 2.5 0 014.8.9c0 1.7-2.4 2.2-2.4 3.7"/><circle cx="12" cy="16.9" r=".6" fill="currentColor"/></svg>Вопросы</a>
   <a href="#kp" data-sec="kp" class="kp"><svg viewBox="0 0 24 24"><path d="M6 3.5h8l4 4v13H6z"/><path d="M14 3.5v4h4M9 12.5h6M9 16h6"/></svg>КП</a>
 </nav>
 
