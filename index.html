@@ -1248,6 +1248,14 @@
     masks.forEach((m) => m.classList.add('in'));
   }
 
+  // Страховка: если анимация не сработала, фото и текст всё равно показываются
+  setTimeout(() => {
+    document.querySelectorAll('.mask:not(.in)').forEach((m) => { const r = m.getBoundingClientRect(); if (r.top < innerHeight) m.classList.add('in'); });
+  }, 2500);
+  document.addEventListener('scroll', () => {
+    document.querySelectorAll('.mask:not(.in)').forEach((m) => { if (m.parentElement.getBoundingClientRect().top < innerHeight * 0.9) m.classList.add('in'); });
+  }, { passive: true });
+
   // Прокрутка: прогресс, шапка, параллакс, линия процесса, липкая кнопка
   const progress = document.getElementById('progress');
   const header = document.getElementById('top');
