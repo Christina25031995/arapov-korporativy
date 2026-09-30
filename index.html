@@ -731,6 +731,31 @@
   .terms.t4{margin-top:36px;}
   .terms.t4 .term{padding-top:22px;}
   .terms.t4 .term i{margin-bottom:14px;}
+  @media (max-width:900px){
+    .fmt-cards{display:grid !important;grid-template-columns:1fr;gap:56px;margin:0;padding:0;overflow:visible;}
+    .fcard{flex:none;}
+    .fcard-img{aspect-ratio:4/3;margin-bottom:20px;}
+    .fcard-num{font-size:36px;left:16px;top:12px;}
+    .fcard h3{font-size:30px;}
+  }
+  /* Мобильная версия: без каруселей, ровные столбики */
+  @media (max-width:900px){
+    section{padding:56px 0 !important;}
+    .facts-sec{padding:0 0 56px !important;}
+    h2{font-size:clamp(30px,8.6vw,38px) !important;}
+    .sec-head,.sec-head.solo{margin-bottom:28px !important;}
+    .audience,.risk-grid,.doc-grid,.steps,.off-grid > div:first-child{display:block !important;overflow:visible !important;margin:0 !important;padding:0 !important;border-top:1px solid var(--line) !important;}
+    .audience > .aud,.risk-grid > .case,.off-grid > div:first-child > .off-item{display:block;border:0 !important;border-bottom:1px solid var(--line) !important;padding:26px 0 !important;background:none !important;margin:0 !important;}
+    .off-grid > div:first-child > .off-item{display:grid !important;grid-template-columns:44px 1fr;gap:12px;}
+    .aud .n{margin-bottom:14px;}
+    .aud h3{font-size:24px;}
+    .case .big{font-size:64px;}
+    .case .kicker{margin-bottom:16px;}
+    #process .steps{display:grid !important;}
+    .off-grid{gap:32px !important;}
+    .runsheet .rs-row{padding:12px 18px;grid-template-columns:62px 1fr;}
+    .runsheet-head{padding:16px 18px;}
+  }
 </style>
 </head>
 <body>
@@ -803,7 +828,7 @@
 <section class="formats" id="formats">
   <div class="wrap">
     <div class="sec-head row">
-      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Два формата <em>под вашу&nbsp;задачу</em></h2></div>
+      <div><span class="eyebrow rv">Форматы</span><h2 data-split>Два формата <em>под вашу задачу</em></h2></div>
       <p class="lead rv">Программу собираю под компанию, её людей и повод. Формат подскажу на первом&nbsp;созвоне.</p>
     </div>
     <!-- ЗАМЕНИТЬ: состав форматов по словам Тимофея (камерный / большой / третий уточнить по записи встречи) -->
@@ -828,13 +853,13 @@
 <section id="for-whom" style="padding-top:0;">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Для&nbsp;кого</span><h2 data-split>Кому со&nbsp;мной <em>проще&nbsp;всего</em></h2></div>
+      <div><span class="eyebrow rv">Для&nbsp;кого</span><h2 data-split>Кому со&nbsp;мной <em>проще всего</em></h2></div>
       <p class="lead rv one-line">Корпоратив согласуют несколько человек, и&nbsp;у&nbsp;каждого свой вопрос. Вот что&nbsp;получает&nbsp;каждый.</p>
     </div>
     <div class="audience" data-stagger>
       <div class="aud rv">
         <span class="n">01</span>
-        <h3>HR&nbsp;и&nbsp;внутренние&nbsp;коммуникации</h3>
+        <h3>HR&nbsp;и&nbsp;внутренние коммуникации</h3>
         <span class="role">Отвечаете за&nbsp;атмосферу и&nbsp;команду</span>
         <dl>
           <dt>Задача</dt><dd>Вечер, на&nbsp;который хочется прийти, где новички и&nbsp;интроверты не&nbsp;чувствуют себя&nbsp;лишними.</dd>
@@ -871,8 +896,8 @@
       <p class="lead rv one-line">Живые фрагменты с&nbsp;корпоративов. Полные записи пришлю вместе&nbsp;с&nbsp;КП.</p>
     </div>
     <div class="video-grid two" data-stagger>
-      <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное&nbsp;промо</h3><p>Как проходит вечер&nbsp;для&nbsp;компании</p></div></div>
-      <div class="video-card rv" data-video="video/game-promo.mp4"><div class="video-thumb"><img class="poster" src="video/game-promo.jpg" alt="Игровое промо: Тимофей Арапов с гостями" loading="lazy"><span class="tag">02 · Игровое промо</span><div class="play"></div></div><div class="vinfo"><h3>Игровое&nbsp;промо</h3><p>Интерактивы без&nbsp;конкурсов&nbsp;«для&nbsp;галочки»</p></div></div>
+      <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное промо</h3><p>Как проходит вечер&nbsp;для&nbsp;компании</p></div></div>
+      <div class="video-card rv" data-video="video/game-promo.mp4"><div class="video-thumb"><img class="poster" src="video/game-promo.jpg" alt="Игровое промо: Тимофей Арапов с гостями" loading="lazy"><span class="tag">02 · Игровое промо</span><div class="play"></div></div><div class="vinfo"><h3>Игровое промо</h3><p>Интерактивы без&nbsp;конкурсов&nbsp;«для&nbsp;галочки»</p></div></div>
     </div>
   </div>
 </section>
@@ -930,10 +955,10 @@
     <div class="sec-head solo"><span class="eyebrow rv">Сценарий</span><h2 data-split>Речи, награждения и&nbsp;тайминг <em>до&nbsp;минуты</em></h2></div>
     <div class="off-grid" style="margin-top:0;">
       <div data-stagger>
-        <div class="off-item rv"><i>01</i><div><h3>Выступления&nbsp;руководителей</h3><p>Заранее узнаю, кто и&nbsp;о&nbsp;чём говорит, готовлю подводки, договариваемся&nbsp;о&nbsp;длительности.</p></div></div>
-        <div class="off-item rv"><i>02</i><div><h3>Церемония&nbsp;награждения</h3><p>Номинации, порядок выхода, кто вручает, музыка на&nbsp;выход. Лауреаты знают, когда&nbsp;их&nbsp;очередь.</p></div></div>
-        <div class="off-item rv"><i>03</i><div><h3>Новогодние традиции&nbsp;компании</h3><p>Что случилось с&nbsp;вами за&nbsp;год, кого обсуждали чаще всего, квиз по&nbsp;факапам года. Смешно,&nbsp;но&nbsp;<span class="nowrap">по-доброму</span>.</p></div></div>
-        <div class="off-item rv"><i>04</i><div><h3>Своя&nbsp;команда</h3><p>Диджей и&nbsp;технические подрядчики работают со&nbsp;мной. Один поминутный план&nbsp;на&nbsp;всех.</p></div></div>
+        <div class="off-item rv"><i>01</i><div><h3>Выступления руководителей</h3><p>Заранее узнаю, кто и&nbsp;о&nbsp;чём говорит, готовлю подводки, договариваемся&nbsp;о&nbsp;длительности.</p></div></div>
+        <div class="off-item rv"><i>02</i><div><h3>Церемония награждения</h3><p>Номинации, порядок выхода, кто вручает, музыка на&nbsp;выход. Лауреаты знают, когда&nbsp;их&nbsp;очередь.</p></div></div>
+        <div class="off-item rv"><i>03</i><div><h3>Новогодние традиции компании</h3><p>Что случилось с&nbsp;вами за&nbsp;год, кого обсуждали чаще всего, квиз по&nbsp;факапам года. Смешно,&nbsp;но&nbsp;<span class="nowrap">по-доброму</span>.</p></div></div>
+        <div class="off-item rv"><i>04</i><div><h3>Своя команда</h3><p>Диджей и&nbsp;технические подрядчики работают со&nbsp;мной. Один поминутный план&nbsp;на&nbsp;всех.</p></div></div>
       </div>
       <div>
         <div class="runsheet" id="runsheet" aria-label="Пример фрагмента сценарного плана">
@@ -965,20 +990,20 @@
 <section id="risks" class="light">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow rv">Если <span class="nowrap">что-то</span> пошло не&nbsp;так</span><h2 data-split><span class="nowrap">Форс-мажоры</span> гости <em>не&nbsp;должны&nbsp;замечать</em></h2></div>
+      <div><span class="eyebrow rv">Если <span class="nowrap">что-то</span> пошло не&nbsp;так</span><h2 data-split><span class="nowrap">Форс-мажоры</span> гости <em>не&nbsp;должны замечать</em></h2></div>
       <p class="lead rv">На&nbsp;живом мероприятии <span class="nowrap">что-то</span> идёт не&nbsp;по&nbsp;плану почти всегда. Вопрос в&nbsp;том,&nbsp;увидит&nbsp;ли&nbsp;это&nbsp;зал.</p>
     </div>
     <div class="risk-grid" data-stagger>
       <div class="case rv">
         <span class="kicker">Реальная история</span>
         <span class="big"><span data-count="5">5</span><small>раз</small></span>
-        <h3>за&nbsp;вечер отключался&nbsp;свет</h3>
+        <h3>за&nbsp;вечер отключался свет</h3>
         <p>Каждый раз программа продолжалась, гости оставались в&nbsp;зале, а&nbsp;вечер не&nbsp;превратился в&nbsp;череду неловких&nbsp;пауз.</p>
       </div>
       <div class="case rv">
         <span class="kicker">Реальная история</span>
         <span class="big"><span data-count="20">20</span><small>минут</small></span>
-        <h3>держал зал до&nbsp;выхода&nbsp;артиста</h3>
+        <h3>держал зал до&nbsp;выхода артиста</h3>
         <p>Артист задерживался, а&nbsp;пауза в&nbsp;программе незаметно превратилась в&nbsp;живой разговор&nbsp;с&nbsp;залом.</p>
       </div>
       <div class="case rv">
@@ -1005,7 +1030,7 @@
             <div class="step"><span class="dotn">01</span><div><h3>Бриф,&nbsp;30&nbsp;минут</h3><p>Созвон: задачи вечера, состав гостей, что&nbsp;важно компании, о&nbsp;чём лучше&nbsp;не&nbsp;шутить.</p></div></div>
       <div class="step"><span class="dotn">02</span><div><h3>Сценарий&nbsp;под&nbsp;компанию</h3><p>Программа на&nbsp;основе брифа: официальная часть, интерактивы, связки,&nbsp;музыка.</p></div></div>
       <div class="step"><span class="dotn">03</span><div><h3>Согласование&nbsp;с&nbsp;руководителем</h3><p>Присылаю документ, который удобно показать руководству. Вношу&nbsp;правки.</p></div></div>
-      <div class="step"><span class="dotn">04</span><div><h3>Своя&nbsp;команда</h3><p>Мой диджей и&nbsp;технические подрядчики. Сверяю тайминг и&nbsp;технику&nbsp;с&nbsp;площадкой.</p></div></div>
+      <div class="step"><span class="dotn">04</span><div><h3>Своя команда</h3><p>Мой диджей и&nbsp;технические подрядчики. Сверяю тайминг и&nbsp;технику&nbsp;с&nbsp;площадкой.</p></div></div>
       <div class="step"><span class="dotn">05</span><div><h3>Вечер</h3><p>Приезжаю заранее, проверяю звук и&nbsp;сцену, веду по&nbsp;плану и&nbsp;решаю вопросы&nbsp;на&nbsp;месте.</p></div></div>
             <div class="step"><span class="dotn">06</span><div><h3>Отчёт&nbsp;и&nbsp;фото</h3><p>После мероприятия отправляю короткий итог и&nbsp;кадры со&nbsp;сцены для&nbsp;внутренних&nbsp;коммуникаций.</p></div></div>
     </div>
@@ -1037,8 +1062,8 @@
     <div class="terms t4" data-stagger>
       <div class="term rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат, длительность и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после&nbsp;подписания.</p></div>
       <div class="term rv"><i>02</i><h3>Предоплата&nbsp;50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями&nbsp;и&nbsp;агентствами.</p></div>
-      <div class="term rv"><i>03</i><h3>Закрывающие&nbsp;документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
-      <div class="term rv"><i>04</i><h3>Перенос&nbsp;даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
+      <div class="term rv"><i>03</i><h3>Закрывающие документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
+      <div class="term rv"><i>04</i><h3>Перенос даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
     </div>
   </div>
 </section>
@@ -1261,7 +1286,7 @@
   const tabSecs = tabLinks.map((a) => document.getElementById(a.dataset.sec));
   function onTab() {
     if (!tabbar) return;
-    tabbar.classList.toggle('show', window.scrollY > innerHeight * 0.6);
+    tabbar.classList.add('show');
     let cur = -1;
     tabSecs.forEach((sec, i) => { if (sec && sec.getBoundingClientRect().top < innerHeight * 0.45) cur = i; });
     tabLinks.forEach((a, i) => a.classList.toggle('on', i === cur && !a.classList.contains('kp')));
