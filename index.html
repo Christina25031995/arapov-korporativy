@@ -13,7 +13,7 @@
 <meta property="og:title" content="Ведущий на корпоратив в Санкт-Петербурге, Тимофей Арапов">
 <meta property="og:description" content="Новогодний корпоратив, день компании, награждение. Сценарий под компанию, тайминг до минуты, без пошлых конкурсов. КП за 15 минут.">
 <meta property="og:url" content="https://christina25031995.github.io/arapov-korporativy/">
-<meta property="og:image" content="https://christina25031995.github.io/timofey-arapov/images/hero-timofey.jpg">
+<meta property="og:image" content="https://christina25031995.github.io/arapov-korporativy/images/hero-ny2026.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <!-- Превью для клиента: не индексировать, пока страница не переедет на основной сайт -->
 <meta name="robots" content="noindex, nofollow">
@@ -174,7 +174,7 @@
   .season .dot{display:none;}
   .season b{color:var(--ink);font-weight:600;}
   .hero-photo{position:relative;margin:0;overflow:hidden;aspect-ratio:16/11;background:#1a1a1a;}
-  .hero-photo img{width:100%;height:120%;object-fit:cover;object-position:center 16%;filter:grayscale(1) contrast(1.08) brightness(.92);will-change:transform;}
+  .hero-photo img{width:100%;height:120%;object-fit:cover;object-position:center 40%;filter:grayscale(1) contrast(1.08) brightness(.92);will-change:transform;}
   .hero-photo figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:20px 22px;font-size:12px;color:rgba(243,240,234,.75);background:linear-gradient(transparent,rgba(0,0,0,.6));}
   .hero-photo figcaption b{display:block;font-family:var(--serif);font-weight:400;font-size:18px;color:#F3F0EA;}
   .hero-photo .rec{font-family:var(--serif);font-style:italic;font-size:14px;color:rgba(243,240,234,.75);}
@@ -264,7 +264,7 @@
   /* 6. Стиль ведения: страхи зачёркиваются */
   .style-grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start;}
   .style-photo{overflow:hidden;position:sticky;top:120px;aspect-ratio:4/5;}
-  .style-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);}
+  .style-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:grayscale(1) contrast(1.05);}
   .style-grid h2{margin-bottom:24px;}
   .fears{margin-top:56px;border-top:1px solid var(--line);}
   .fear{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start;}
@@ -708,6 +708,29 @@
     #process .step .dotn{font-size:18px;}
     #process .step h3{font-size:19px;}
   }
+  .fcard-img img{object-position:center center;}
+  @media (min-width:901px){
+    .lead.one-line{max-width:none;white-space:nowrap;}
+    .lead.two-line{max-width:none;}
+  }
+  @media (max-width:900px){.br-desk{display:none;}}
+  .terms.t4{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px;}
+  @media (max-width:900px){.terms.t4{grid-template-columns:1fr;margin-top:40px;}}
+  @media (min-width:901px){
+    .hero-grid{grid-template-columns:minmax(0,6fr) minmax(0,6fr);}
+    .hero-lead{max-width:none;white-space:nowrap;}
+  }
+  .fact{min-width:0;}
+  .fact b{font-size:clamp(30px,2.9vw,46px);white-space:nowrap;}
+  .fact b small{font-size:.42em;font-style:italic;color:var(--muted);margin-right:8px;vertical-align:.35em;}
+  @media (max-width:560px){.fact b{font-size:clamp(24px,7vw,30px);}}
+  #price{padding:72px 0;}
+  .one-price{padding-top:28px;gap:64px;}
+  .op-list li{padding:11px 0;font-size:19px;}
+  .op-main p{margin-bottom:22px;}
+  .terms.t4{margin-top:36px;}
+  .terms.t4 .term{padding-top:22px;}
+  .terms.t4 .term i{margin-bottom:14px;}
 </style>
 </head>
 <body>
@@ -747,17 +770,16 @@
     </div>
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="lead rv" style="--d:.5s">Новогодние корпоративы, дни компании, награждения и&nbsp;конференции. Сценарий под&nbsp;вашу компанию, официальная часть до&nbsp;минуты и&nbsp;юмор, за&nbsp;который не&nbsp;придётся краснеть перед&nbsp;руководством.</p>
+        <p class="lead rv hero-lead" style="--d:.5s">Новогодние корпоративы, дни компании, награждения<br class="br-desk"> и&nbsp;конференции. Сценарий под&nbsp;вашу компанию,<br class="br-desk"> официальная часть до&nbsp;минуты и&nbsp;юмор, за&nbsp;который<br class="br-desk"> не&nbsp;придётся краснеть перед&nbsp;руководством.</p>
         <div class="hero-actions rv" style="--d:.65s">
           <!-- ЗАМЕНИТЬ: подтвердить у Тимофея обещание «КП за 15 минут» и его рабочие часы (сейчас везде: «в рабочее время») -->
           <a href="#kp" class="btn btn-gold mag">Получить КП&nbsp;за&nbsp;15&nbsp;минут <span class="arr">→</span></a>
           <a href="#kp" class="btn btn-line mag" data-focus="date">Свободные даты декабря</a>
         </div>
-        <div class="season rv" style="--d:.8s"><span class="dot"></span><span><b>Идёт бронирование декабря.</b> Пятницы и&nbsp;субботы в&nbsp;середине месяца уходят первыми.</span></div>
+        <div class="season rv" style="--d:.8s"><span class="dot"></span><span><b style="display:block;">Идёт бронирование декабря.</b>Пятницы и&nbsp;субботы в&nbsp;середине месяца уходят первыми.</span></div>
       </div>
       <figure class="hero-photo mask" style="--d:.3s">
-        <!-- ЗАМЕНИТЬ: фото Тимофея с корпоративного мероприятия (сцена, награждение, деловой костюм), когда появится -->
-        <img src="images/hero-timofey.jpg" alt="Тимофей Арапов, ведущий корпоративных мероприятий в Санкт-Петербурге" width="1600" height="2399" fetchpriority="high" data-parallax>
+                <img src="images/hero-ny2026.jpg" alt="Тимофей Арапов на сцене новогоднего корпоратива 2026" width="1800" height="1200" fetchpriority="high" data-parallax>
         <figcaption><span><b>Тимофей Арапов</b>ведущий мероприятий с&nbsp;2011&nbsp;года</span><span class="rec">с&nbsp;2011</span></figcaption>
       </figure>
     </div>
@@ -770,7 +792,7 @@
     <!-- ЗАМЕНИТЬ: 800+ мероприятий взято с главной, там цифра тоже ждёт подтверждения -->
     <div class="facts" data-stagger style="margin-top:0;">
       <div class="fact rv"><b><span data-count="800">800</span>+</b><span>мероприятий на&nbsp;сцене с&nbsp;2011&nbsp;года</span></div>
-      <div class="fact rv"><b>от&nbsp;<span data-count="100">100</span>&nbsp;000&nbsp;₽</b><span>корпоративный вечер до&nbsp;6&nbsp;часов, цена зависит от&nbsp;даты</span></div>
+      <div class="fact rv"><b><small>от</small><span data-count="100">100</span>&nbsp;000&nbsp;₽</b><span>корпоративный вечер до&nbsp;6&nbsp;часов, цена зависит от&nbsp;даты</span></div>
       <div class="fact rv"><b>Договор</b><span>юрлица, оплата по&nbsp;безналу, закрывающие документы</span></div>
       <div class="fact rv"><b><span data-count="15">15</span> мин</b><span>на&nbsp;КП&nbsp;в&nbsp;рабочее время, с&nbsp;ответом по&nbsp;дате</span></div>
     </div>
@@ -807,7 +829,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div><span class="eyebrow rv">Для&nbsp;кого</span><h2 data-split>Кому со&nbsp;мной <em>проще&nbsp;всего</em></h2></div>
-      <p class="lead rv">Корпоратив согласуют несколько человек, и&nbsp;у&nbsp;каждого свой вопрос. Вот что&nbsp;получает&nbsp;каждый.</p>
+      <p class="lead rv one-line">Корпоратив согласуют несколько человек, и&nbsp;у&nbsp;каждого свой вопрос. Вот что&nbsp;получает&nbsp;каждый.</p>
     </div>
     <div class="audience" data-stagger>
       <div class="aud rv">
@@ -846,7 +868,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div><span class="eyebrow rv">Видео</span><h2 data-split>Как это выглядит <em>на&nbsp;сцене</em></h2></div>
-      <p class="lead rv">Живые фрагменты с&nbsp;корпоративов. Полные записи пришлю вместе&nbsp;с&nbsp;КП.</p>
+      <p class="lead rv one-line">Живые фрагменты с&nbsp;корпоративов. Полные записи пришлю вместе&nbsp;с&nbsp;КП.</p>
     </div>
     <div class="video-grid two" data-stagger>
       <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное&nbsp;промо</h3><p>Как проходит вечер&nbsp;для&nbsp;компании</p></div></div>
@@ -885,13 +907,12 @@
 <!-- 6. СТИЛЬ ВЕДЕНИЯ -->
 <section id="style" class="light">
   <div class="wrap">
-    <div class="sec-head solo"><span class="eyebrow rv">Стиль ведения</span><h2 data-split>Корпоратив <em>без&nbsp;неловкости</em></h2></div>
+    <div class="sec-head solo style-head"><span class="eyebrow rv">Стиль ведения</span><h2 data-split>Корпоратив <em>без&nbsp;неловкости</em></h2><p class="lead rv two-line" style="margin-top:20px;">Разный зал, от&nbsp;стажёров до&nbsp;директоров, и&nbsp;половина не&nbsp;любит «участвовать».<br class="br-desk"> Поэтому я&nbsp;веду так, чтобы неловко не&nbsp;было&nbsp;никому.</p></div>
     <div class="style-grid">
       <div class="style-photo mask">
-        <img src="images/action-timofey.jpg" alt="Тимофей Арапов ведёт мероприятие" loading="lazy">
+        <img src="images/style-white.jpg" alt="Тимофей Арапов с микрофоном ведёт корпоратив" loading="lazy">
       </div>
       <div>
-        <p class="lead rv">Разный зал, от&nbsp;стажёров до&nbsp;директоров, и&nbsp;половина не&nbsp;любит «участвовать». Поэтому я&nbsp;веду так, чтобы неловко не&nbsp;было&nbsp;никому.</p>
         <div class="fears">
           <div class="fears-head"><span>Как бывает обычно</span><span>Как у&nbsp;меня</span></div>
           <div class="fear rv"><div><s>Конкурсы с&nbsp;переодеваниями и&nbsp;пошлые шутки</s></div><p>Интеллигентный юмор, без&nbsp;переодеваний и&nbsp;шуток&nbsp;«на&nbsp;грани»</p></div>
@@ -977,7 +998,7 @@
 <!-- 9. КАК ПРОХОДИТ РАБОТА -->
 <section id="process" class="compact">
   <div class="wrap">
-    <div class="sec-head row">
+    <div class="sec-head">
       <div><span class="eyebrow rv">Как&nbsp;работаем</span><h2 data-split>Шесть шагов <em>от&nbsp;заявки&nbsp;до&nbsp;отчёта</em></h2></div>
       <p class="lead rv">Ваше время уходит только на&nbsp;бриф и&nbsp;согласование. Остальное беру&nbsp;на&nbsp;себя.</p>
     </div>
@@ -1014,26 +1035,16 @@
         <li>Поминутный план для&nbsp;вас&nbsp;и&nbsp;площадки</li>
       </ul>
     </div>
-  </div>
-</section>
-
-<!-- 11. ДОКУМЕНТЫ И ГАРАНТИИ -->
-<section class="docs" id="docs">
-  <div class="wrap">
-    <span class="eyebrow rv">Документы и&nbsp;гарантии</span>
-    <h2 data-split>Работаю <em>по&nbsp;договору</em></h2>
-    <p class="lead rv" style="margin-top:24px;">Чтобы бухгалтерии и&nbsp;юристам не&nbsp;пришлось ничего&nbsp;придумывать.</p>
-    <!-- ЗАМЕНИТЬ: юрстатус Тимофея (ИП / самозанятый) и какие закрывающие документы выдаёт -->
-    <div class="doc-grid" data-stagger>
-      <div class="doc rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат, длительность и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после&nbsp;подписания.</p></div>
-      <div class="doc rv"><i>02</i><h3>Предоплата&nbsp;50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями&nbsp;и&nbsp;агентствами.</p></div>
-      <div class="doc rv"><i>03</i><h3>Закрывающие&nbsp;документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
-      <div class="doc rv"><i>04</i><h3>Перенос&nbsp;даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
+    <div class="terms t4" data-stagger>
+      <div class="term rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат, длительность и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после&nbsp;подписания.</p></div>
+      <div class="term rv"><i>02</i><h3>Предоплата&nbsp;50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями&nbsp;и&nbsp;агентствами.</p></div>
+      <div class="term rv"><i>03</i><h3>Закрывающие&nbsp;документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
+      <div class="term rv"><i>04</i><h3>Перенос&nbsp;даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 12. ВОПРОСЫ -->
+<!-- 11. ВОПРОСЫ -->
 <section id="faq">
   <div class="wrap">
     <div class="sec-head solo"><span class="eyebrow rv">Вопросы</span><h2 data-split>Частые вопросы <em>от&nbsp;компаний</em></h2></div>
@@ -1055,7 +1066,7 @@
   </div>
 </section>
 
-<!-- 13. ФОРМА КП (действие) -->
+<!-- 12. ФОРМА КП (действие) -->
 <section class="contact" id="kp">
   <div class="wrap">
     <div class="sec-head solo"><span class="eyebrow rv">Запрос КП</span><h2 data-split>Получить КП <em>за&nbsp;15&nbsp;минут</em></h2></div>
@@ -1122,7 +1133,7 @@
 </main>
 
 <footer>
-  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span><a href="https://christina25031995.github.io/timofey-arapov/">Свадьбы и&nbsp;частные праздники</a></div>
+  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span></div>
 </footer>
 
 <div class="mbar" id="mbar">
