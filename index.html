@@ -762,6 +762,13 @@
   .fear s{background-image:linear-gradient(#C7362F,#C7362F) !important;background-size:100% 2px !important;}
   @media (min-width:901px){.contact .sec-head h2{font-size:min(84px,calc((100vw - 64px) / 15));}}
   .logo-row{grid-template-columns:repeat(auto-fit,minmax(150px,1fr)) !important;}
+  /* Первый экран с фото кота */
+  @media (min-width:901px){
+    .hero-grid{grid-template-columns:minmax(0,8fr) minmax(0,4fr) !important;}
+    .hero-photo{aspect-ratio:1/1 !important;}
+  }
+  .hero-photo img{object-position:center 30% !important;}
+  .hero-photo img{height:100% !important;object-position:center center !important;}
 </style>
 </head>
 <body>
@@ -809,8 +816,7 @@
         <div class="season rv" style="--d:.8s"><span class="dot"></span><span><b style="display:block;">Идёт бронирование декабря.</b>Пятницы и&nbsp;субботы в&nbsp;середине месяца уходят первыми.</span></div>
       </div>
       <figure class="hero-photo mask" style="--d:.3s">
-                <img src="images/hero-ny2026.jpg" alt="Тимофей Арапов на сцене новогоднего корпоратива 2026" width="1800" height="1200" fetchpriority="high" data-parallax>
-        <figcaption><span><b>Тимофей Арапов</b>ведущий мероприятий с&nbsp;2011&nbsp;года</span><span class="rec">с&nbsp;2011</span></figcaption>
+                <img src="images/hero-cat.jpg" alt="Тимофей Арапов с котом" width="1400" height="1400" fetchpriority="high">
       </figure>
     </div>
 
@@ -970,7 +976,7 @@
       <div>
         <div class="runsheet" id="runsheet" aria-label="Пример фрагмента сценарного плана">
           <div class="runsheet-head"><span>Сценарный план</span><span>Пример фрагмента</span></div>
-          <div class="rs-row"><time>18:00</time><span>Сбор гостей<em>фотобудка, ведущий раздаёт карточки лото</em></span></div>
+          <div class="rs-row"><time>18:00</time><span>Сбор гостей, фоновая музыка<em>диджей · <span class="nowrap">welcome-зона</span> с&nbsp;фуршетом · фотобудка · ведущий раздаёт карточки лото</em></span></div>
           <div class="rs-row"><time>18:30</time><span>Всех приглашают за&nbsp;стол</span></div>
           <div class="rs-row"><time>18:40</time><span>Открытие вечера, приветствие ведущего<em>история знакомства ведущего с&nbsp;компанией</em></span></div>
           <div class="rs-row"><time>18:45</time><span>Первый тост за&nbsp;Новый год<em>гастропауза, 10&nbsp;минут фоновой музыки</em></span></div>
