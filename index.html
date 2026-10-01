@@ -659,7 +659,7 @@
   .contact .sec-head.solo{margin-bottom:28px;}
   .after{margin-bottom:28px;}
   .after li{padding:10px 0;}
-  .k-form{gap:24px 32px;}
+  .k-form{gap:18px 32px;}
   @media (max-width:900px){
     .steps,.audience,.risk-grid,.doc-grid{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 6px;border-top:0;scrollbar-width:none;}
     .steps::-webkit-scrollbar,.audience::-webkit-scrollbar,.risk-grid::-webkit-scrollbar,.doc-grid::-webkit-scrollbar{display:none;}
@@ -821,6 +821,8 @@
   /* Айфоны цветные сразу, при наведении приподнимаются */
   .phone-screen img,.phone-screen video{filter:none !important;}
   .case-phone:hover .phone{transform:translateY(-8px);}
+  footer .wrap{flex-direction:column;gap:6px;}
+  .k-form .consent small a{color:inherit;border-bottom:1px solid currentColor;}
 </style>
 </head>
 <body>
@@ -882,7 +884,7 @@
     <div class="facts" data-stagger style="margin-top:0;">
       <div class="fact rv"><b><span data-count="1200">1200</span>+</b><span>мероприятий на&nbsp;сцене с&nbsp;2011&nbsp;года</span></div>
       <div class="fact rv"><b><small>от</small><span data-count="100">100</span>&nbsp;000&nbsp;₽</b><span>корпоративный вечер до&nbsp;6&nbsp;часов, цена зависит от&nbsp;даты</span></div>
-      <div class="fact rv"><b>Договор</b><span>юрлица, оплата по&nbsp;безналу, закрывающие документы</span></div>
+      <div class="fact rv"><b>Договор</b><span>юрлица, оплата по&nbsp;безналу, чек самозанятого</span></div>
       <div class="fact rv"><b>КП</b><span>в&nbsp;тот&nbsp;же день, с&nbsp;ответом по&nbsp;вашей&nbsp;дате</span></div>
     </div>
   </div>
@@ -1175,7 +1177,7 @@
     <div class="terms t4" data-stagger>
       <div class="term rv"><i>01</i><h3>Договор</h3><p>Фиксируем дату, формат, длительность и&nbsp;состав работ. Дата закрепляется за&nbsp;вами после&nbsp;подписания.</p></div>
       <div class="term rv"><i>02</i><h3>Предоплата&nbsp;50%</h3><p>По&nbsp;счёту, безналичным расчётом. Работаю с&nbsp;компаниями&nbsp;и&nbsp;агентствами.</p></div>
-      <div class="term rv"><i>03</i><h3>Закрывающие документы</h3><p>Акт и&nbsp;счёт для&nbsp;бухгалтерии после&nbsp;мероприятия.</p></div>
+      <div class="term rv"><i>03</i><h3>Чек самозанятого</h3><p>Работаю как самозанятый: после оплаты чек из&nbsp;«Мой налог» для&nbsp;бухгалтерии.</p></div>
       <div class="term rv"><i>04</i><h3>Перенос даты</h3><p>Если дата сдвинулась, подбираем новую вместе. Условия переноса и&nbsp;отмены прописываем&nbsp;в&nbsp;договоре.</p></div>
     </div>
   </div>
@@ -1191,7 +1193,7 @@
         <a href="tel:+79522875375" class="text-link rv">+7&nbsp;952&nbsp;<span class="nowrap">287-53-75</span></a>
       </div>
       <div class="faq-list">
-        <details open><summary>Работаете по&nbsp;договору с&nbsp;юрлицом? Можно&nbsp;по&nbsp;безналу?</summary><div class="ans"><p>Да. Договор с&nbsp;компанией или агентством, предоплата 50% по&nbsp;счёту, после мероприятия закрывающие&nbsp;документы.</p></div></details>
+        <details open><summary>Работаете по&nbsp;договору с&nbsp;юрлицом? Можно&nbsp;по&nbsp;безналу?</summary><div class="ans"><p>Да. Договор с&nbsp;компанией или&nbsp;агентством, предоплата 50% по&nbsp;счёту. Я&nbsp;самозанятый, после оплаты присылаю чек из&nbsp;«Мой налог» для&nbsp;бухгалтерии.</p></div></details>
         <details><summary>Сколько&nbsp;стоит?</summary><div class="ans"><p>Корпоративный вечер до&nbsp;6&nbsp;часов стоит от&nbsp;100 000 до&nbsp;150 000&nbsp;₽. Точная сумма зависит от&nbsp;даты, пришлю&nbsp;её&nbsp;в&nbsp;КП.</p></div></details>
         <details><summary>Можно совсем&nbsp;без&nbsp;конкурсов?</summary><div class="ans"><p>Да. Основа программы у&nbsp;меня живой диалог с&nbsp;залом. Интерактивы, если нужны, подбираю под&nbsp;компанию и&nbsp;согласую&nbsp;заранее.</p></div></details>
         <details><summary>У&nbsp;нас разный состав: от&nbsp;стажёров&nbsp;до&nbsp;директоров.</summary><div class="ans"><p>Это обычная ситуация. Никого не&nbsp;вытаскиваю на&nbsp;сцену силой: кто хочет, включается, кто не&nbsp;хочет, спокойно наблюдает&nbsp;и&nbsp;не&nbsp;скучает.</p></div></details>
@@ -1254,8 +1256,11 @@
           <label for="f-contact">Телефон, Telegram или&nbsp;<span class="nowrap">e-mail</span> <span class="req">*</span></label>
           <input id="f-contact" name="contact" type="text" autocomplete="tel" required placeholder="+7 … / @username / почта">
         </div>
-        <div class="full">
+        <div>
           <label class="check"><input type="checkbox" name="deck" id="f-deck"><span>Нужна презентация для&nbsp;руководителя<small>Пришлю короткую версию на&nbsp;одну страницу, чтобы удобно переслать&nbsp;руководству</small></span></label>
+        </div>
+        <div>
+          <label class="check consent"><input type="checkbox" name="consent" id="f-consent" required><span>Соглашаюсь на&nbsp;обработку персональных данных<small>По&nbsp;<a href="https://christina25031995.github.io/timofey-arapov/privacy/" target="_blank" rel="noopener">политике обработки персональных данных</a></small></span></label>
         </div>
         <div class="full form-actions">
           <button type="submit" class="btn btn-gold mag">Получить КП <span class="arr">→</span></button>
@@ -1270,7 +1275,7 @@
 </main>
 
 <footer>
-  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span></div>
+  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span><span>Самозанятый Арапов Тимофей Сергеевич, ИНН&nbsp;781714508345 · <a href="https://christina25031995.github.io/timofey-arapov/privacy/">Политика обработки персональных данных</a></span></div>
 </footer>
 
 <div class="mbar" id="mbar">
@@ -1520,6 +1525,12 @@
     e.preventDefault();
     const date = form.date.value;
     const contact = form.contact.value.trim();
+    if (!form.consent.checked) {
+      statusEl.textContent = 'Отметьте, пожалуйста, согласие на обработку персональных данных.';
+      statusEl.classList.add('show');
+      form.consent.focus();
+      return;
+    }
     if (!date || !contact) {
       statusEl.textContent = 'Укажите, пожалуйста, дату мероприятия и контакт для ответа.';
       statusEl.classList.add('show');
