@@ -818,6 +818,9 @@
   @media (max-width:900px){.case-phone{flex:0 0 62%;} .phones{margin:0 -20px;padding:6px 20px 18px;}}
   .phone-screen video{opacity:0;transition:opacity .4s,filter .7s var(--ease);}
   .case-phone.on .phone-screen video{opacity:1;}
+  /* Айфоны цветные сразу, при наведении приподнимаются */
+  .phone-screen img,.phone-screen video{filter:none !important;}
+  .case-phone:hover .phone{transform:translateY(-8px);}
 </style>
 </head>
 <body>
@@ -958,7 +961,7 @@
     </div>
     <div class="video-grid two" data-stagger>
       <div class="video-card rv" data-video="video/corp-promo.mp4"><div class="video-thumb"><img class="poster" src="video/corp-promo.jpg" alt="Корпоративное промо Тимофея Арапова" loading="lazy"><span class="tag">01 · Корпоративное промо</span><div class="play"></div></div><div class="vinfo"><h3>Корпоративное промо</h3><p>Как проходит вечер&nbsp;для&nbsp;компании</p></div></div>
-      <div class="video-card rv" data-video="video/game-promo.mp4"><div class="video-thumb"><img class="poster" src="video/game-promo.jpg" alt="Игровое промо: Тимофей Арапов с гостями" loading="lazy"><span class="tag">02 · Игровое промо</span><div class="play"></div></div><div class="vinfo"><h3>Игровое промо</h3><p>Интерактивы без&nbsp;конкурсов&nbsp;«для&nbsp;галочки»</p></div></div>
+      <div class="video-card rv" data-video="video/game-promo.mp4"><div class="video-thumb"><img class="poster" src="video/game-promo.jpg" alt="Интерактив с гостями: Тимофей Арапов показывает фокусы" loading="lazy"><span class="tag">02 · Интерактив с&nbsp;гостями</span><div class="play"></div></div><div class="vinfo"><h3>Интерактив с&nbsp;гостями</h3><p>Фокусы и&nbsp;игры, в&nbsp;которые включается весь&nbsp;стол</p></div></div>
     </div>
   </div>
 </section>
