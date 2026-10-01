@@ -769,6 +769,31 @@
   }
   .hero-photo img{object-position:center 30% !important;}
   .hero-photo img{height:100% !important;object-position:center center !important;}
+  @media (min-width:901px){#process .steps{grid-template-rows:repeat(3,auto);grid-auto-flow:column;}}
+  /* Влезть в экран после правок 01.10 */
+  @media (min-width:901px){
+    #official{padding:64px 0;}
+    #official .off-item{padding:12px 0;}
+    #official .off-item h3{font-size:21px;margin-bottom:4px;}
+    #official .off-item p{font-size:14.5px;}
+    #official .rs-row{padding:9px 24px;}
+    #official .runsheet-head{padding:14px 24px 12px;}
+    .fear{padding:12px 0;}
+    #style{padding:64px 0;}
+    #price{padding:64px 0;}
+  }
+  /* Логотипы бегущей строкой */
+  .logo-marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:56px;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
+  .logo-track{display:flex;width:max-content;animation:logos-run 38s linear infinite;}
+  .logo-marquee:hover .logo-track{animation-play-state:paused;}
+  .logo-item{flex:0 0 auto;width:220px;height:110px;display:flex;align-items:center;justify-content:center;padding:18px 26px;border-right:1px solid var(--line);}
+  .logo-item img{max-height:40px;max-width:100%;filter:brightness(0) invert(1);opacity:.72;}
+  .logo-item.secret{flex-direction:column;gap:4px;text-align:center;}
+  .logo-item.secret span{font-family:var(--serif);font-style:italic;font-size:18px;}
+  .logo-item.secret small{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);}
+  @keyframes logos-run{to{transform:translateX(-50%);}}
+  @media (max-width:900px){.logo-item{width:160px;height:86px;padding:14px 18px;} .logo-track{animation-duration:30s;}}
+  @media (min-width:901px){#official{padding:56px 0 52px;}}
 </style>
 </head>
 <body>
@@ -921,14 +946,27 @@
       <p class="lead rv"><span class="nowrap">IT-компании</span>, холдинги, бизнес и&nbsp;сотрудники&nbsp;ведомств.</p>
     </div>
     <!-- Компании по словам Тимофея 30.09. Логотипы взяты с официальных сайтов компаний и Викисклада (Газпром). -->
-    <div class="logo-row" data-stagger>
-      <div class="rv"><img src="images/clients/rosatom.svg" alt="Росатом" loading="lazy"></div>
-      <div class="rv"><img src="images/clients/superwave.svg" alt="SuperWave Group" loading="lazy"></div>
-      <div class="rv"><img src="images/clients/saburovo.png" alt="Агрополис Сабурово" loading="lazy"></div>
-      <div class="rv"><img src="images/clients/adamant.svg" alt="Холдинг Адамант" loading="lazy"></div>
-      <div class="rv"><img src="images/clients/gazprom.svg" alt="Газпром" loading="lazy"></div>
-      <div class="rv"><img src="images/clients/pilki.svg" alt="Студии маникюра Пилки" loading="lazy"></div>
-      <div class="rv secret"><span>Госведомства</span><small>больше ничего не&nbsp;скажу</small></div>
+    <div class="logo-marquee rv" aria-label="Компании-заказчики">
+      <div class="logo-track">
+      <div class="logo-item"><img src="images/clients/rosatom.svg" alt="Росатом" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/superwave.svg" alt="SuperWave Group" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/saburovo.png" alt="Агрополис Сабурово" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/adamant.svg" alt="Холдинг Адамант" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/gazprom.svg" alt="Газпром" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/pilki.svg" alt="Студии маникюра Пилки" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/diam-aero.png" alt="Диам-Аэро" loading="lazy"></div>
+      <div class="logo-item"><img src="images/clients/mega.svg" alt="МЕГА Дыбенко" loading="lazy"></div>
+      <div class="logo-item secret"><span>Госведомства</span><small>больше ничего не&nbsp;скажу</small></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/rosatom.svg" alt="Росатом" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/superwave.svg" alt="SuperWave Group" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/saburovo.png" alt="Агрополис Сабурово" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/adamant.svg" alt="Холдинг Адамант" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/gazprom.svg" alt="Газпром" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/pilki.svg" alt="Студии маникюра Пилки" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/diam-aero.png" alt="Диам-Аэро" loading="lazy"></div>
+      <div class="logo-item"><img aria-hidden="true" src="images/clients/mega.svg" alt="МЕГА Дыбенко" loading="lazy"></div>
+      <div class="logo-item secret"><span>Госведомства</span><small>больше ничего не&nbsp;скажу</small></div>
+      </div>
     </div>
     <!-- 1200+ от Тимофея 01.10; 400+ отзывов взято с главной, ждёт подтверждения -->
     <div class="stats" data-stagger>
