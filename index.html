@@ -816,6 +816,8 @@
   .case-phone figcaption i{display:block;font-style:italic;font-size:14px;color:var(--accent);margin-bottom:4px;}
   @media (min-width:1200px){.phones{justify-content:space-between;overflow:visible;} .case-phone{flex:0 0 calc((100% - 4*28px)/5);}}
   @media (max-width:900px){.case-phone{flex:0 0 62%;} .phones{margin:0 -20px;padding:6px 20px 18px;}}
+  .phone-screen video{opacity:0;transition:opacity .4s,filter .7s var(--ease);}
+  .case-phone.on .phone-screen video{opacity:1;}
 </style>
 </head>
 <body>
@@ -1431,11 +1433,11 @@
     };
     const start = (sound) => {
       const vid = ensure();
-      document.querySelectorAll('.case-phone.on').forEach((o) => { if (o !== c) { o.classList.remove('on', 'sound'); const ov = o.querySelector('video'); if (ov) { ov.pause(); ov.muted = true; } } });
+      document.querySelectorAll('.case-phone.on').forEach((o) => { if (o !== c) { o.classList.remove('on', 'sound'); const ov = o.querySelector('video'); if (ov) { ov.pause(); ov.muted = true; ov.currentTime = 0; } } });
       vid.muted = !sound; c.classList.add('on'); c.classList.toggle('sound', !!sound);
       vid.play().catch(() => {});
     };
-    const stop = () => { if (v) { v.pause(); v.muted = true; } c.classList.remove('on', 'sound'); };
+    const stop = () => { if (v) { v.pause(); v.muted = true; v.currentTime = 0; } c.classList.remove('on', 'sound'); };
     if (finePointer) {
       c.addEventListener('mouseenter', () => start(false));
       c.addEventListener('mouseleave', stop);
