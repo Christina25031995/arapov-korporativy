@@ -1258,10 +1258,7 @@
           <label for="f-contact">Телефон, Telegram или&nbsp;<span class="nowrap">e-mail</span> <span class="req">*</span></label>
           <input id="f-contact" name="contact" type="text" autocomplete="tel" required placeholder="+7 … / @username / почта">
         </div>
-        <div>
-          <label class="check"><input type="checkbox" name="deck" id="f-deck"><span>Нужна презентация для&nbsp;руководителя<small>Пришлю короткую версию на&nbsp;одну страницу, чтобы удобно переслать&nbsp;руководству</small></span></label>
-        </div>
-        <div>
+        <div class="full">
           <label class="check consent"><input type="checkbox" name="consent" id="f-consent" required><span>Даю <a href="https://christina25031995.github.io/timofey-arapov/soglasie/" target="_blank" rel="noopener">согласие на&nbsp;обработку персональных данных</a><small><a href="https://christina25031995.github.io/timofey-arapov/privacy/" target="_blank" rel="noopener">Политика обработки данных</a></small></span></label>
         </div>
         <div class="full form-actions">
@@ -1493,7 +1490,6 @@
   document.querySelectorAll('[data-focus="date"]').forEach((a) => a.addEventListener('click', () => {
     setTimeout(() => form.date.focus({ preventScroll: true }), 700);
   }));
-  document.querySelectorAll('[data-deck]').forEach((a) => a.addEventListener('click', () => { form.deck.checked = true; }));
 
   // «Скопировать ссылку для руководителя»
   const shareBtn = document.getElementById('share-btn');
@@ -1546,7 +1542,6 @@
       form.guests.value ? `Гостей: ${form.guests.value}` : '',
       `Формат: ${form.format.value}`,
       form.venue.value.trim() ? `Площадка: ${form.venue.value.trim()}` : '',
-      form.deck.checked ? 'Нужна презентация для руководителя: да' : '',
       `Контакт: ${contact}`
     ].filter(Boolean).join('\n');
     const result = await sendLead(text);
