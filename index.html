@@ -18,9 +18,8 @@
 <!-- Превью для клиента: не индексировать, пока страница не переедет на основной сайт -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0B0B0C">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="cookie-consent.js" defer></script>
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
 {
@@ -525,6 +524,7 @@
   .cta-band{grid-template-columns:1fr;gap:26px;}
   .cta-row{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
   .cta-row p{margin:0;}
+  @media (min-width:901px){.cta-row p{max-width:none;white-space:nowrap;}}
   @media (min-width:901px){
     section h2{font-size:min(58px,calc((100vw - 64px) / 20.5));white-space:nowrap;}
     .contact .sec-head h2{font-size:min(84px,calc((100vw - 64px) / 13));}
@@ -823,7 +823,8 @@
   .phone-screen img,.phone-screen video{filter:none !important;}
   .case-phone:hover .phone{transform:translateY(-8px);}
   footer .wrap{flex-direction:column;gap:6px;}
-  .k-form .consent small a{color:inherit;border-bottom:1px solid currentColor;}
+  .k-form .consent a{color:inherit;border-bottom:1px solid currentColor;}
+  .k-form .consent small{white-space:nowrap;}
 </style>
 </head>
 <body>
@@ -1261,7 +1262,7 @@
           <label class="check"><input type="checkbox" name="deck" id="f-deck"><span>Нужна презентация для&nbsp;руководителя<small>Пришлю короткую версию на&nbsp;одну страницу, чтобы удобно переслать&nbsp;руководству</small></span></label>
         </div>
         <div>
-          <label class="check consent"><input type="checkbox" name="consent" id="f-consent" required><span>Соглашаюсь на&nbsp;обработку персональных данных<small>По&nbsp;<a href="https://christina25031995.github.io/timofey-arapov/privacy/" target="_blank" rel="noopener">политике обработки персональных данных</a></small></span></label>
+          <label class="check consent"><input type="checkbox" name="consent" id="f-consent" required><span>Даю <a href="https://christina25031995.github.io/timofey-arapov/soglasie/" target="_blank" rel="noopener">согласие на&nbsp;обработку персональных данных</a><small><a href="https://christina25031995.github.io/timofey-arapov/privacy/" target="_blank" rel="noopener">Политика обработки данных</a></small></span></label>
         </div>
         <div class="full form-actions">
           <button type="submit" class="btn btn-gold mag">Получить КП <span class="arr">→</span></button>
@@ -1276,7 +1277,7 @@
 </main>
 
 <footer>
-  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span><span>Самозанятый Арапов Тимофей Сергеевич, ИНН&nbsp;781714508345 · <a href="https://christina25031995.github.io/timofey-arapov/privacy/">Политика обработки персональных данных</a></span></div>
+  <div class="wrap"><span>Тимофей Арапов, ведущий корпоративов и&nbsp;мероприятий, <span class="nowrap">Санкт-Петербург</span></span><span>Самозанятый Арапов Тимофей Сергеевич, ИНН&nbsp;781714508345 · <a href="https://christina25031995.github.io/timofey-arapov/privacy/">Политика обработки персональных данных</a> · <a href="#cookie-settings">Настройки cookie</a></span></div>
 </footer>
 
 <div class="mbar" id="mbar">
